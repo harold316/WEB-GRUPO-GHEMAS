@@ -21,6 +21,7 @@ export type Patologia = {
   sintomas: string[];
   cuandoConsultar: string[];
   icono: IconName;
+  flyer?: string;
 };
 
 export type Profesional = {

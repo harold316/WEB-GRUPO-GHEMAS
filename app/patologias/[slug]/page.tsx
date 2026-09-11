@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
@@ -41,7 +42,20 @@ export default async function PatologiaDetallePage({
       <PageHero eyebrow="Patologías" title={item.nombre} description={item.resumen} />
       <Section>
         <div className="mx-auto max-w-3xl">
-          <PathologyIcon id={item.id} className="mb-6 h-12 w-12" />
+          {item.flyer ? (
+            <div className="relative mb-10 overflow-hidden rounded-3xl border border-line bg-mint shadow-soft">
+              <Image
+                src={item.flyer}
+                alt={`Información de ${item.nombre} — Ghemas`}
+                width={666}
+                height={1024}
+                className="h-auto w-full"
+                priority
+              />
+            </div>
+          ) : (
+            <PathologyIcon id={item.id} className="mb-6 h-12 w-12" />
+          )}
           <h2 className="font-serif text-2xl text-ink">¿Qué es?</h2>
           <p className="mt-3 text-base leading-relaxed text-ink-muted">
             {item.descripcion}

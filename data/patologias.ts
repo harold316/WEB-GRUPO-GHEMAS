@@ -73,6 +73,7 @@ export const patologias: Patologia[] = [
     nombre: "Plaquetas bajas",
     slug: "plaquetas-bajas",
     icono: "trendingDown",
+    flyer: "/images/patologias/plaquetas-bajas-flyer.jpg",
     resumen:
       "Trombocitopenia: menor cantidad de plaquetas. Requiere contexto clínico para interpretarla.",
     descripcion:
@@ -115,6 +116,7 @@ export const patologias: Patologia[] = [
     nombre: "Glóbulos blancos elevados",
     slug: "globulos-blancos-elevados",
     icono: "trendingUp",
+    flyer: "/images/patologias/globulos-blancos-elevados-flyer.jpg",
     resumen:
       "Leucocitosis: aumento de glóbulos blancos. Tiene múltiples causas posibles.",
     descripcion:
