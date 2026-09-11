@@ -3,9 +3,9 @@
  * Reemplazar estos valores de ejemplo por los datos reales una sola vez.
  */
 export const contact = {
-  /** Solo dígitos, con código de país. Ejemplo real: 54911XXXXXXXX */
-  whatsappNumber: "5491100000000",
-  whatsappDisplay: "WhatsApp (dato de ejemplo)",
+  /** Solo dígitos, con código de país. */
+  whatsappNumber: "5491154030229",
+  whatsappDisplay: "+54 9 11 5403-0229",
   phoneDisplay: "Teléfono (dato de ejemplo)",
   phoneHref: "tel:+5491100000000",
   email: "email@ejemplo-consultorio.com",
