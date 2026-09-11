@@ -1,0 +1,6 @@
+Solicitud de derivación — EJEMPLO PARA PROFESIONALES
+====================================================
+
+Modelo público de ejemplo. No utilizar este canal para datos clínicos identificables.
+
+Los resultados de pacientes requerirán acceso autenticado y privado.

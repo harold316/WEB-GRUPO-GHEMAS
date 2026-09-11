@@ -1,0 +1,5 @@
+Documentación de interés — EJEMPLO
+==================================
+
+Espacio reservado para material institucional dirigido a colegas.
+Conectar posteriormente con almacenamiento real (Drive, S3, CMS).

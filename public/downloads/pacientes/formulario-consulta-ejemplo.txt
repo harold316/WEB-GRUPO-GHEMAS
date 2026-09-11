@@ -1,0 +1,7 @@
+Formulario de consulta — EJEMPLO
+================================
+
+Este archivo es un marcador de posición.
+Reemplazar por el formulario institucional (PDF o DOCX) en almacenamiento real.
+
+No incluir datos clínicos sensibles en archivos públicos.

@@ -1,26 +1,141 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --background: #f3f8f6;
+  --foreground: #1a2a26;
+  --ink: #1a2a26;
+  --ink-muted: #5a6b66;
+  --brand: #0f766e;
+  --brand-dark: #0b5f59;
+  --brand-button: #0f766e;
+  --aqua: #7dd3c7;
+  --mint: #e4f4ee;
+  --line: #d2e6de;
+  --surface: #ffffff;
+  --surface-muted: #eaf4f0;
+  --whatsapp: #128c7e;
+  --whatsapp-dark: #0e6e63;
+  --footer: #15241f;
+  --hero-1: #f7fcfa;
+  --hero-2: #e8f6f1;
+  --glow: rgb(125 211 199 / 0.42);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #0c1412;
+  --foreground: #e7f2ee;
+  --ink: #e7f2ee;
+  --ink-muted: #9db0aa;
+  --brand: #5ee0d0;
+  --brand-dark: #99f6e4;
+  --brand-button: #0f9a8c;
+  --aqua: #5ee0d0;
+  --mint: #16312c;
+  --line: #2a433d;
+  --surface: #14201c;
+  --surface-muted: #101a18;
+  --whatsapp: #1fbe7a;
+  --whatsapp-dark: #18a56a;
+  --footer: #080d0c;
+  --hero-1: #101a18;
+  --hero-2: #0c1614;
+  --glow: rgb(45 212 191 / 0.18);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-button: var(--brand-button);
+  --color-aqua: var(--aqua);
+  --color-mint: var(--mint);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-dark: var(--whatsapp-dark);
+  --color-footer: var(--footer);
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
+  --shadow-card: 0 10px 28px -20px rgb(15 118 110 / 0.45);
+  --shadow-card-hover: 0 18px 36px -18px rgb(15 118 110 / 0.5);
+  --shadow-soft: 0 16px 40px -18px rgb(15 118 110 / 0.5);
+  --shadow-float: 0 12px 28px -8px rgb(18 140 126 / 0.55);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif), Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  input,
+  textarea,
+  select {
+    background-color: var(--surface);
+    color: var(--ink);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility bg-hero {
+  background:
+    radial-gradient(circle at 88% 8%, var(--glow), transparent 44%),
+    linear-gradient(165deg, var(--hero-1) 0%, var(--hero-2) 100%);
+}
+
+@utility bg-cta {
+  background: linear-gradient(135deg, #0f766e 0%, #128a7c 52%, #1aa58c 100%);
+}
+
+.dark .bg-cta {
+  background: linear-gradient(135deg, #0b4f49 0%, #0e6b60 50%, #128574 100%);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-fade-up {
+  animation: fade-up 0.65s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    transition: none;
+  }
+
+  .animate-fade-up {
+    animation: none;
+  }
 }
