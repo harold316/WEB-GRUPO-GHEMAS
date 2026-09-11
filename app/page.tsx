@@ -70,13 +70,13 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section className="bg-surface-muted">
+      <Section className="bg-[#eef7f4] dark:bg-surface-muted">
         <SectionHeading
           eyebrow="Prácticas"
           title="Estudios y procedimientos"
           description="Fichas claras para comprender qué se solicita y cómo se realiza, cuando el equipo lo indica."
         />
-        <div className="mt-10 grid gap-5 sm:grid-cols-2">
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
           {estudios.map((item) => (
             <StudyCard key={item.id} estudio={item} />
           ))}

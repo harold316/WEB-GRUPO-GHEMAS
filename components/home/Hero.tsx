@@ -107,29 +107,29 @@ const atencion = [
     title: "Diagnóstico",
     text: "Evaluamos hallazgos de laboratorio y síntomas en un marco clínico prudente.",
     glyph: "drop" as const,
-    image: "/images/atencion/diagnostico.png",
-    alt: "Ilustración de cerebro, microscopio y tubos de ensayo",
+    image: "/images/atencion/diagnostico-lab.jpg",
+    alt: "Toma de muestra de sangre en laboratorio",
   },
   {
     title: "Evaluación hematológica",
     text: "Orientación especializada para comprender el hemograma y los estudios complementarios.",
     glyph: "clipboard" as const,
-    image: "/images/atencion/evaluacion.png",
-    alt: "Ilustración de corazón y glóbulos rojos",
+    image: "/images/atencion/evaluacion-lab.jpg",
+    alt: "Microscopio y análisis de hemograma en laboratorio",
   },
   {
     title: "Estudios especializados",
     text: "Información clara sobre procedimientos y preparación, cuando están indicados.",
     glyph: "scope" as const,
-    image: "/images/atencion/estudios.png",
-    alt: "Ilustración de ADN, microscopio y monitor",
+    image: "/images/atencion/estudios-lab.jpg",
+    alt: "Analizador hematológico en laboratorio",
   },
   {
     title: "Seguimiento médico",
     text: "Acompañamiento a lo largo del tiempo, con un canal directo para turnos.",
     glyph: "calendar" as const,
-    image: "/images/atencion/seguimiento.png",
-    alt: "Ilustración de teléfono con agenda y emblema médico",
+    image: "/images/atencion/seguimiento-lab.jpg",
+    alt: "Agenda de turnos en el teléfono junto a un emblema médico",
   },
 ];
 
@@ -149,12 +149,12 @@ export function AttentionCards() {
             <h3 className="mt-4 font-serif text-xl leading-snug text-ink">{item.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink-muted">{item.text}</p>
           </div>
-          <div className="relative h-36 w-full sm:h-40">
+          <div className="relative mt-auto h-40 w-full overflow-hidden sm:h-44">
             <Image
               src={item.image}
               alt={item.alt}
               fill
-              className="object-contain object-bottom"
+              className="object-cover object-center"
               sizes="(max-width: 1024px) 50vw, 25vw"
             />
           </div>

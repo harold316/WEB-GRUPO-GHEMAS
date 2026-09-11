@@ -21,8 +21,8 @@ export default function EstudiosPage() {
         title="Estudios y procedimientos hematológicos"
         description="Descripciones educativas. La indicación, la preparación y los plazos los confirma el equipo tratante."
       />
-      <Section>
-        <div className="grid gap-5 sm:grid-cols-2">
+      <Section className="bg-[#eef7f4] dark:bg-surface-muted">
+        <div className="grid gap-5 md:grid-cols-2">
           {estudios.map((item) => (
             <StudyCard key={item.id} estudio={item} />
           ))}
