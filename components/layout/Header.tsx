@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { mainNav } from "@/data/navigation";
-import { siteConfig } from "@/config/site";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { BrandLogo } from "@/components/layout/BrandLogo";
@@ -36,11 +35,8 @@ export function Header() {
           <span className="rounded-md bg-white p-1 shadow-sm ring-1 ring-line">
             <BrandLogo priority height={42} className="h-10 sm:h-11" />
           </span>
-          <span className="hidden leading-tight min-[400px]:block">
-            <span className="block text-sm font-semibold text-ink">
-              {siteConfig.name}
-            </span>
-            <span className="block text-xs text-ink-muted">Consultorio</span>
+          <span className="hidden text-sm font-semibold text-ink min-[400px]:block">
+            Grupo Ghemas
           </span>
         </Link>
 
