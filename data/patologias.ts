@@ -6,6 +6,7 @@ export const patologias: Patologia[] = [
     nombre: "Anemia",
     slug: "anemia",
     icono: "droplets",
+    flyer: "/images/patologias/anemia-flyer.jpg",
     resumen:
       "Disminución de glóbulos rojos o de hemoglobina que puede generar cansancio y otros síntomas.",
     descripcion:
@@ -96,6 +97,7 @@ export const patologias: Patologia[] = [
     nombre: "Plaquetas elevadas",
     slug: "plaquetas-elevadas",
     icono: "trendingUp",
+    flyer: "/images/patologias/plaquetas-elevadas-flyer.jpg",
     resumen:
       "Trombocitosis: recuento plaquetario por encima del rango de referencia.",
     descripcion:
