@@ -11,6 +11,7 @@ import { patologias } from "@/data/patologias";
 import { profesionales } from "@/data/profesionales";
 import { estudios } from "@/data/estudios";
 import { sedes } from "@/data/sedes";
+import { ScienceBackdrop } from "@/components/home/ScienceBackdrop";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -24,7 +25,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Section>
+      <Section className="bg-[#eef7f4] dark:bg-surface-muted">
         <SectionHeading
           eyebrow="El consultorio"
           title="Atención especializada"
@@ -35,7 +36,9 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section className="bg-surface-muted">
+      <Section className="relative overflow-hidden bg-[#eef7f4] dark:bg-surface-muted">
+        <ScienceBackdrop />
+        <div className="relative">
         <SectionHeading
           eyebrow="Orientación"
           title="¿Qué patologías atendemos?"
@@ -50,6 +53,7 @@ export default function HomePage() {
           <Button href="/patologias" variant="secondary">
             Ver todas las patologías
           </Button>
+        </div>
         </div>
       </Section>
 

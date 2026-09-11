@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Droplets, HeartPulse, Microscope, Stethoscope } from "lucide-react";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { Button } from "@/components/ui/Button";
 
@@ -67,26 +66,70 @@ export function Hero() {
   );
 }
 
+function AttentionGlyph({ name }: { name: "drop" | "clipboard" | "scope" | "calendar" }) {
+  const common = {
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+  };
+
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true" {...common}>
+      {name === "drop" ? (
+        <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 0 0 7 7z" />
+      ) : null}
+      {name === "clipboard" ? (
+        <>
+          <rect x="6" y="4" width="12" height="16" rx="2" />
+          <path d="M9 4h6v3H9zM9 12l2 2 4-4" />
+        </>
+      ) : null}
+      {name === "scope" ? (
+        <>
+          <circle cx="8" cy="8" r="3" />
+          <path d="M10.2 10.2 14 14M14 14h4v3h-3" />
+        </>
+      ) : null}
+      {name === "calendar" ? (
+        <>
+          <rect x="4" y="5" width="16" height="15" rx="2" />
+          <path d="M8 3v4M16 3v4M4 10h16" />
+        </>
+      ) : null}
+    </svg>
+  );
+}
+
 const atencion = [
   {
     title: "Diagnóstico",
     text: "Evaluamos hallazgos de laboratorio y síntomas en un marco clínico prudente.",
-    icon: Stethoscope,
+    glyph: "drop" as const,
+    image: "/images/atencion/diagnostico.png",
+    alt: "Ilustración de cerebro, microscopio y tubos de ensayo",
   },
   {
     title: "Evaluación hematológica",
     text: "Orientación especializada para comprender el hemograma y los estudios complementarios.",
-    icon: HeartPulse,
+    glyph: "clipboard" as const,
+    image: "/images/atencion/evaluacion.png",
+    alt: "Ilustración de corazón y glóbulos rojos",
   },
   {
     title: "Estudios especializados",
     text: "Información clara sobre procedimientos y preparación, cuando están indicados.",
-    icon: Microscope,
+    glyph: "scope" as const,
+    image: "/images/atencion/estudios.png",
+    alt: "Ilustración de ADN, microscopio y monitor",
   },
   {
     title: "Seguimiento médico",
     text: "Acompañamiento a lo largo del tiempo, con un canal directo para turnos.",
-    icon: Droplets,
+    glyph: "calendar" as const,
+    image: "/images/atencion/seguimiento.png",
+    alt: "Ilustración de teléfono con agenda y emblema médico",
   },
 ];
 
@@ -96,14 +139,25 @@ export function AttentionCards() {
       {atencion.map((item, index) => (
         <article
           key={item.title}
-          className="animate-fade-up rounded-3xl border border-line bg-surface p-6 shadow-card transition hover:-translate-y-1 hover:border-brand/25"
+          className="flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-white/80 bg-white shadow-[0_8px_30px_rgba(17,124,112,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-line dark:bg-surface"
           style={{ animationDelay: `${index * 80}ms` }}
         >
-          <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-mint text-brand">
-            <item.icon className="h-5 w-5" aria-hidden="true" />
-          </span>
-          <h3 className="mt-4 font-serif text-xl text-ink">{item.title}</h3>
-          <p className="mt-2 text-sm leading-relaxed text-ink-muted">{item.text}</p>
+          <div className="flex flex-1 flex-col p-5 pb-2">
+            <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#117C70] text-white">
+              <AttentionGlyph name={item.glyph} />
+            </span>
+            <h3 className="mt-4 font-serif text-xl leading-snug text-ink">{item.title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-ink-muted">{item.text}</p>
+          </div>
+          <div className="relative h-36 w-full sm:h-40">
+            <Image
+              src={item.image}
+              alt={item.alt}
+              fill
+              className="object-contain object-bottom"
+              sizes="(max-width: 1024px) 50vw, 25vw"
+            />
+          </div>
         </article>
       ))}
     </div>

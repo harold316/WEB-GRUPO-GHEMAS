@@ -11,7 +11,7 @@ function Svg({ children }: { children: React.ReactNode }) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      className="h-6 w-6"
+      className="h-6 w-6 shrink-0"
       aria-hidden="true"
       {...stroke}
     >
@@ -23,10 +23,8 @@ function Svg({ children }: { children: React.ReactNode }) {
 const icons: Record<string, React.ReactNode> = {
   anemia: (
     <Svg>
-      <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 0 0 7 7z" />
-      <circle cx="12" cy="13" r="1" />
-      <circle cx="10" cy="16" r="1" />
-      <circle cx="14" cy="16" r="1" />
+      <circle cx="12" cy="12" r="8" />
+      <ellipse cx="12" cy="12" rx="4" ry="2.2" />
     </Svg>
   ),
   trombosis: (
@@ -47,28 +45,28 @@ const icons: Record<string, React.ReactNode> = {
   ),
   "plaquetas-bajas": (
     <Svg>
-      <path d="M4 11l3-2 2 3-3 1zM9 5l2-2 2 2-1 2zM14 12l2-1 1 2-2 1z" />
-      <path d="M19 15v6M16 18l3 3 3-3" />
+      <path d="M5 10l2.2-1.4 1.4 2.2-2.2.8zM9 6l1.6-1.6 1.6 1.6-.8 1.6z" />
+      <path d="M12 11v8M9 16l3 3 3-3" />
     </Svg>
   ),
   "plaquetas-elevadas": (
     <Svg>
-      <path d="M3 14l2-1 1 2-2 1zM7 16l2-2 1 2-2 1zM5 9l2-1 1 2-2 1zM10 10l2-2 1 2-2 1z" />
-      <path d="M19 9V3M16 6l3-3 3 3" />
+      <path d="M5 16l2.2 1.4 1.4-2.2-2.2-.8zM9 19l1.6 1.6 1.6-1.6-.8-1.6z" />
+      <path d="M12 13V5M9 8l3-3 3 3" />
     </Svg>
   ),
   "globulos-blancos-elevados": (
     <Svg>
-      <circle cx="10" cy="12" r="7" />
-      <path d="M9 10a2 2 0 0 1 2 2v1a1 1 0 0 0 1 1h1" strokeDasharray="1 1" />
-      <path d="M19 9V3M16 6l3-3 3 3" />
+      <circle cx="12" cy="13" r="5.5" />
+      <path d="M12 4v2.2M18.4 7.2l-1.6 1.6M20 13h-2.2M18.4 18.8l-1.6-1.6M12 20v-2.2M5.6 18.8l1.6-1.6M4 13h2.2M5.6 7.2l1.6 1.6" />
+      <circle cx="12" cy="13" r="1.6" />
     </Svg>
   ),
   "globulos-blancos-disminuidos": (
     <Svg>
-      <circle cx="10" cy="12" r="7" />
-      <path d="M9 10a2 2 0 0 1 2 2v1a1 1 0 0 0 1 1h1" strokeDasharray="1 1" />
-      <path d="M19 15v6M16 18l3 3 3-3" />
+      <circle cx="12" cy="11" r="5.5" />
+      <path d="M12 3v2.2M18.4 6.2l-1.6 1.6M20 11h-2.2M4 11h2.2M5.6 6.2l1.6 1.6" />
+      <path d="M12 16v5M9 18l3 3 3-3" />
     </Svg>
   ),
   policitemia: (
@@ -109,15 +107,14 @@ const icons: Record<string, React.ReactNode> = {
 
 export function PathologyIcon({
   id,
-  className = "h-10 w-10",
+  className,
 }: {
   id: string;
   className?: string;
 }) {
   return (
     <span
-      className={`inline-flex items-center justify-center rounded-full p-2 ${className}`}
-      style={{ backgroundColor: "rgba(17, 124, 112, 0.08)" }}
+      className={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#117C70]/10 p-2 ${className ?? ""}`}
     >
       {icons[id] ?? icons.anemia}
     </span>
