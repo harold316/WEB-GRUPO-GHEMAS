@@ -30,6 +30,7 @@ export const patologias: Patologia[] = [
     nombre: "Trombosis",
     slug: "trombosis",
     icono: "activity",
+    flyer: "/images/patologias/trombosis-flyer.jpg",
     resumen:
       "Formación de un coágulo en un vaso sanguíneo. Requiere evaluación médica oportuna.",
     descripcion:
