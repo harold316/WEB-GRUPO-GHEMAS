@@ -1,7 +1,7 @@
+import Image from "next/image";
 import { Droplets, HeartPulse, Microscope, Stethoscope } from "lucide-react";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { Button } from "@/components/ui/Button";
-import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 
 export function Hero() {
   return (
@@ -48,11 +48,14 @@ export function Hero() {
           </dl>
         </div>
         <div className="animate-fade-up relative delay-150">
-          <div className="overflow-hidden rounded-[2rem] border border-line bg-surface shadow-soft ring-1 ring-brand/10">
-            <PlaceholderImage
-              label="Consulta hematológica"
-              seed="hero"
-              className="aspect-[5/4] min-h-[280px] sm:min-h-[360px]"
+          <div className="relative aspect-[5/4] min-h-[280px] overflow-hidden rounded-[2rem] border border-line bg-surface shadow-soft ring-1 ring-brand/10 sm:min-h-[360px]">
+            <Image
+              src="/images/hero-consulta-hematologica.jpg"
+              alt="Consulta hematológica: médico especialista atendiendo a una paciente en consultorio"
+              fill
+              priority
+              className="object-cover object-[center_20%]"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
           <p className="absolute -bottom-4 right-6 rounded-full border border-line bg-surface px-4 py-2 text-xs font-medium text-ink shadow-card">
