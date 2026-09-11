@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { MedicalNotice } from "@/components/ui/MedicalNotice";
-import { MedicalIcon } from "@/components/ui/MedicalIcon";
+import { PathologyIcon } from "@/components/icons/PathologyIcons";
 import { CtaBanner } from "@/components/cta/CtaBanner";
 import { getPatologiaBySlug, patologiaSlugs } from "@/data/patologias";
 import { pageMetadata } from "@/lib/seo";
@@ -41,9 +41,7 @@ export default async function PatologiaDetallePage({
       <PageHero eyebrow="Patologías" title={item.nombre} description={item.resumen} />
       <Section>
         <div className="mx-auto max-w-3xl">
-          <span className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-mint text-brand">
-            <MedicalIcon name={item.icono} className="h-6 w-6" />
-          </span>
+          <PathologyIcon id={item.id} className="mb-6 h-12 w-12" />
           <h2 className="font-serif text-2xl text-ink">¿Qué es?</h2>
           <p className="mt-3 text-base leading-relaxed text-ink-muted">
             {item.descripcion}
