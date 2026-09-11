@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "Grupo de Hematología",
-  shortName: "Hematología",
+  name: "Ghemas",
+  shortName: "Ghemas",
   tagline: "Hematología especializada, cerca de vos",
   description:
     "Atención especializada para el diagnóstico, estudio y seguimiento de enfermedades de la sangre y del sistema hematológico.",

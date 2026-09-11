@@ -6,13 +6,17 @@ import { contact } from "@/config/contact";
 import { mainNav } from "@/data/navigation";
 import { patologias } from "@/data/patologias";
 import { getAppointmentUrl } from "@/lib/whatsapp";
+import { BrandLogo } from "@/components/layout/BrandLogo";
 
 export function Footer() {
   return (
     <footer className="mt-auto border-t border-line bg-footer text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-serif text-2xl">{siteConfig.name}</p>
+          <div className="inline-flex rounded-xl bg-white p-2">
+            <BrandLogo height={56} className="h-12 sm:h-14" />
+          </div>
+          <p className="mt-4 font-serif text-xl">{siteConfig.name}</p>
           <p className="mt-3 text-sm leading-relaxed text-white/75">
             Atención hematológica especializada, con información clara y un
             canal directo para solicitar turno.
@@ -95,8 +99,8 @@ export function Footer() {
       <div className="border-t border-white/10 px-4 py-6 text-center text-xs text-white/60 sm:px-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 sm:flex-row">
           <p>
-            © 2026 Consultorio / Grupo de Hematología. Todos los derechos
-            reservados.
+            © 2026 Ghemas — Consultorio / Grupo de Hematología. Todos los
+            derechos reservados.
           </p>
           <p className="flex gap-4">
             <Link href="/privacidad" className="hover:text-white">
