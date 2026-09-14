@@ -52,15 +52,28 @@ export default async function ProfesionalPage({
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-mint">
               <Image
                 src={item.foto}
-                alt={`Fotografía de ejemplo de ${name}`}
+                alt={`Fotografía de ${name}`}
                 fill
                 unoptimized
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
-            <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-brand">
-              Dato de ejemplo — reemplazar
-            </p>
+            {item.esEjemplo ? (
+              <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-brand">
+                Dato de ejemplo — reemplazar
+              </p>
+            ) : null}
+            {item.MN ? (
+              <p className="mt-3 text-sm text-ink-muted">MN {item.MN}</p>
+            ) : null}
+            {item.celular ? (
+              <p className="mt-3 text-sm text-ink-muted">
+                Celular:{" "}
+                <a href={`tel:${item.celular.replace(/\D/g, "")}`} className="font-medium text-brand">
+                  {item.celular}
+                </a>
+              </p>
+            ) : null}
           </div>
           <div className="space-y-8">
             <section>

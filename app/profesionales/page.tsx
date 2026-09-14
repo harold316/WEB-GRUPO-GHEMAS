@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Nuestro equipo",
   description:
-    "Conocé al equipo de Hematología. Los perfiles actuales son de ejemplo y se reemplazan fácilmente.",
+    "Conocé al equipo de Hematología de Grupo Ghemas.",
   path: "/profesionales",
 });
 
@@ -18,7 +18,7 @@ export default function ProfesionalesPage() {
       <PageHero
         eyebrow="Especialistas"
         title="Nuestro equipo"
-        description="Tarjetas profesionales listas para cargar nombres, fotos y sedes reales."
+        description="Profesionales de Hematología de Grupo Ghemas."
       />
       <Section>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

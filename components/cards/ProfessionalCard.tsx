@@ -12,10 +12,10 @@ export function ProfessionalCard({ profesional }: { profesional: Profesional }) 
       <div className="relative aspect-[4/3] bg-mint">
         <Image
           src={profesional.foto}
-          alt={`Fotografía de ejemplo de ${name}`}
+          alt={`Fotografía de ${name}`}
           fill
           unoptimized
-          className="object-cover"
+          className="object-cover object-top"
         />
       </div>
       <div className="flex flex-1 flex-col p-6">
@@ -26,6 +26,17 @@ export function ProfessionalCard({ profesional }: { profesional: Profesional }) 
         ) : null}
         <h3 className="mt-1 font-serif text-xl text-ink">{name}</h3>
         <p className="text-sm text-ink-muted">{profesional.especialidad}</p>
+        {profesional.MN ? (
+          <p className="mt-1 text-sm text-ink-muted">MN {profesional.MN}</p>
+        ) : null}
+        {profesional.celular ? (
+          <p className="mt-1 text-sm text-ink-muted">
+            Celular:{" "}
+            <a href={`tel:${profesional.celular.replace(/\D/g, "")}`} className="font-medium text-brand">
+              {profesional.celular}
+            </a>
+          </p>
+        ) : null}
         <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-ink-muted">
           {profesional.bio}
         </p>

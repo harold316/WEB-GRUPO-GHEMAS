@@ -31,13 +31,15 @@ export type Profesional = {
   nombre: string;
   apellido: string;
   especialidad: string;
+  MN?: string;
+  celular?: string;
   formacion: string[];
   experiencia: string;
   areasInteres: string[];
   sedesIds: string[];
   foto: string;
   bio: string;
-  esEjemplo: true;
+  esEjemplo: boolean;
 };
 
 export type Estudio = {

@@ -61,7 +61,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Equipo"
           title="Nuestro equipo"
-          description="Perfiles de ejemplo, listos para reemplazar por los datos reales del grupo."
+          description="Conocé al equipo de Hematología de Grupo Ghemas."
         />
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {profesionales.map((item) => (

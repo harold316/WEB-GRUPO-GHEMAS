@@ -7,11 +7,12 @@ import type { Profesional } from "@/types";
 export const profesionales: Profesional[] = [
   {
     id: "profesional-1",
-    slug: "profesional-ejemplo-1",
-    titulo: "Dra.",
-    nombre: "Nombre",
-    apellido: "del Profesional I",
-    especialidad: "Especialidad (dato de ejemplo)",
+    slug: "daniel-quispe-mamani",
+    titulo: "Dr.",
+    nombre: "Daniel",
+    apellido: "Quispe Mamani",
+    especialidad: "Especialista en Hematología",
+    celular: "1121812360",
     formacion: [
       "Formación académica (dato de ejemplo)",
       "Posgrado / residencia (dato de ejemplo)",
@@ -24,9 +25,9 @@ export const profesionales: Profesional[] = [
       "Área de interés 3 (ejemplo)",
     ],
     sedesIds: ["sede-1", "sede-2"],
-    foto: "/images/profesionales/profesional-1.svg",
-    bio: "Perfil de ejemplo para presentar a un integrante del equipo. Reemplazar esta biografía por una descripción real, breve y profesional.",
-    esEjemplo: true,
+    foto: "/images/profesionales/profesional-1.jpg",
+    bio: "Médico del equipo de Hematología de Grupo Ghemas.",
+    esEjemplo: false,
   },
   {
     id: "profesional-2",
