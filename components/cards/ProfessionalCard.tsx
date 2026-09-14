@@ -40,6 +40,14 @@ export function ProfessionalCard({ profesional }: { profesional: Profesional }) 
             </a>
           </p>
         ) : null}
+        {profesional.email ? (
+          <p className="mt-1 text-sm text-ink-muted">
+            Email:{" "}
+            <a href={`mailto:${profesional.email}`} className="font-medium text-brand">
+              {profesional.email}
+            </a>
+          </p>
+        ) : null}
         <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-ink-muted">
           {profesional.bio}
         </p>

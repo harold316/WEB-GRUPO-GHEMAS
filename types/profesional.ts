@@ -8,6 +8,7 @@ export type Profesional = {
   MN?: string;
   MP?: string;
   celular?: string;
+  email?: string;
   formacion: string[];
   experiencia: string;
   areasInteres: string[];

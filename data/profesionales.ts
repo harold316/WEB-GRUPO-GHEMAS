@@ -52,8 +52,8 @@ export const profesionales: Profesional[] = [
     ],
     sedesIds: ["sede-1"],
     foto: "/images/profesionales/profesional-2.svg",
-    bio: "Perfil de ejemplo. Reemplazar por la presentación real del profesional, sin incluir datos sensibles de pacientes.",
-    esEjemplo: true,
+    bio: "Médica especialista en diagnóstico por imágenes del equipo de Grupo Ghemas.",
+    esEjemplo: false,
   },
   {
     id: "profesional-3",

@@ -77,6 +77,14 @@ export default async function ProfesionalPage({
                 </a>
               </p>
             ) : null}
+            {item.email ? (
+              <p className="mt-3 text-sm text-ink-muted">
+                Email:{" "}
+                <a href={`mailto:${item.email}`} className="font-medium text-brand">
+                  {item.email}
+                </a>
+              </p>
+            ) : null}
           </div>
           <div className="space-y-8">
             <section>
