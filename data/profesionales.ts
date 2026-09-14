@@ -11,7 +11,7 @@ export const profesionales: Profesional[] = [
     titulo: "Dr.",
     nombre: "Daniel",
     apellido: "Quispe Mamani",
-    especialidad: "Especialista en Hematología",
+    especialidad: "Medico Especialista en Hematología",
     MN: "168410",
     celular: "1121812360",
     formacion: [
@@ -40,6 +40,7 @@ export const profesionales: Profesional[] = [
     MN: "181260",
     MP: "459108",
     celular: "1156168585",
+    email: "palmemorales97@gmail.com",
     formacion: [
       "Formación académica (dato de ejemplo)",
       "Posgrado / residencia (dato de ejemplo)",
@@ -57,11 +58,13 @@ export const profesionales: Profesional[] = [
   },
   {
     id: "profesional-3",
-    slug: "profesional-ejemplo-3",
+    slug: "jhenny-perez-magne",
     titulo: "Dra.",
-    nombre: "Nombre",
-    apellido: "del Profesional III",
-    especialidad: "Especialidad (dato de ejemplo)",
+    nombre: "Jhenny",
+    apellido: "Perez Magne",
+    especialidad: "Medica Cirujano",
+    MN: "147877",
+    celular: "1151644478",
     formacion: [
       "Formación académica (dato de ejemplo)",
       "Actualización continua (dato de ejemplo)",
