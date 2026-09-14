@@ -66,6 +66,9 @@ export default async function ProfesionalPage({
             {item.MN ? (
               <p className="mt-3 text-sm text-ink-muted">MN {item.MN}</p>
             ) : null}
+            {item.MP ? (
+              <p className="mt-3 text-sm text-ink-muted">MP {item.MP}</p>
+            ) : null}
             {item.celular ? (
               <p className="mt-3 text-sm text-ink-muted">
                 Celular:{" "}

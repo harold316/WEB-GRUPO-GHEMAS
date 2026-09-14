@@ -24,23 +24,7 @@ export type Patologia = {
   flyer?: string;
 };
 
-export type Profesional = {
-  id: string;
-  slug: string;
-  titulo: "Dr." | "Dra.";
-  nombre: string;
-  apellido: string;
-  especialidad: string;
-  MN?: string;
-  celular?: string;
-  formacion: string[];
-  experiencia: string;
-  areasInteres: string[];
-  sedesIds: string[];
-  foto: string;
-  bio: string;
-  esEjemplo: boolean;
-};
+export type { Profesional } from "./profesional";
 
 export type Estudio = {
   id: string;

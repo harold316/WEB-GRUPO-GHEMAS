@@ -1,4 +1,4 @@
-import type { Profesional } from "@/types";
+import type { Profesional } from "@/types/profesional";
 
 /**
  * Datos de ejemplo claramente identificables.
@@ -12,6 +12,7 @@ export const profesionales: Profesional[] = [
     nombre: "Daniel",
     apellido: "Quispe Mamani",
     especialidad: "Especialista en Hematología",
+    MN: "168410",
     celular: "1121812360",
     formacion: [
       "Formación académica (dato de ejemplo)",
@@ -31,11 +32,14 @@ export const profesionales: Profesional[] = [
   },
   {
     id: "profesional-2",
-    slug: "profesional-ejemplo-2",
-    titulo: "Dr.",
-    nombre: "Nombre",
-    apellido: "del Profesional II",
-    especialidad: "Especialidad (dato de ejemplo)",
+    slug: "palmenia-morales-escobar",
+    titulo: "Dra.",
+    nombre: "Palmenia",
+    apellido: "Morales Escobar",
+    especialidad: "Medica Especialista en Diagnóstico por Imágenes",
+    MN: "181260",
+    MP: "459108",
+    celular: "1156168585",
     formacion: [
       "Formación académica (dato de ejemplo)",
       "Posgrado / residencia (dato de ejemplo)",

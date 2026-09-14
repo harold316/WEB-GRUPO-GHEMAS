@@ -29,6 +29,9 @@ export function ProfessionalCard({ profesional }: { profesional: Profesional }) 
         {profesional.MN ? (
           <p className="mt-1 text-sm text-ink-muted">MN {profesional.MN}</p>
         ) : null}
+        {profesional.MP ? (
+          <p className="mt-1 text-sm text-ink-muted">MP {profesional.MP}</p>
+        ) : null}
         {profesional.celular ? (
           <p className="mt-1 text-sm text-ink-muted">
             Celular:{" "}
