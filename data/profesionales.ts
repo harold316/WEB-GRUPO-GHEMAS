@@ -65,6 +65,7 @@ export const profesionales: Profesional[] = [
     especialidad: "Medica Cirujano",
     MN: "147877",
     celular: "1151644478",
+    email: "Jheanneth10@gmail.com",
     formacion: [
       "Formación académica (dato de ejemplo)",
       "Actualización continua (dato de ejemplo)",
@@ -78,8 +79,8 @@ export const profesionales: Profesional[] = [
     ],
     sedesIds: ["sede-2"],
     foto: "/images/profesionales/profesional-3.svg",
-    bio: "Perfil de ejemplo para una tercera integrante del grupo. Sustituir por datos reales cuando estén disponibles.",
-    esEjemplo: true,
+    bio: "Médica cirujana del equipo de Grupo Ghemas.",
+    esEjemplo: false,
   },
 ];
 
