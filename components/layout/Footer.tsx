@@ -76,6 +76,7 @@ export function Footer() {
             <li>{contact.phoneDisplay}</li>
             <li>{contact.email}</li>
             <li>{contact.address}</li>
+            <li>{contact.city}</li>
           </ul>
           <div className="mt-4 flex gap-3">
             <a

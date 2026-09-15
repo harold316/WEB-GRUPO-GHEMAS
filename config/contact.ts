@@ -9,9 +9,9 @@ export const contact = {
   phoneDisplay: "Teléfono (dato de ejemplo)",
   phoneHref: "tel:+5491100000000",
   email: "email@ejemplo-consultorio.com",
-  address: "Dirección de la sede (dato de ejemplo)",
-  city: "Ciudad (dato de ejemplo)",
-  hours: "Horarios de atención (dato de ejemplo)",
+  address: "Dr. Ignacio Arrieta 1728",
+  city: "Villa Luzuriaga, Buenos Aires",
+  hours: "Martes y viernes. Confirmar horario por WhatsApp.",
   instagramUrl: "https://instagram.com/",
   facebookUrl: "https://facebook.com/",
   defaultAppointmentMessage:

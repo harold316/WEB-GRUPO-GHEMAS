@@ -58,7 +58,7 @@ export default function ContactoPage() {
                 <MapPin className="h-5 w-5 text-brand" aria-hidden="true" />
                 <span>
                   <strong className="block text-ink">Dirección</strong>
-                  {contact.address}
+                  {contact.address}, {contact.city}
                 </span>
               </li>
               <li className="flex gap-3">
@@ -99,7 +99,10 @@ export default function ContactoPage() {
             </div>
           </Card>
           <div className="overflow-hidden rounded-2xl border border-line shadow-card">
-            <ContactMap query={contact.address} title="Consultorio" />
+            <ContactMap
+              query={`${contact.address}, ${contact.city}, Argentina`}
+              title="Consultorio Arrieta"
+            />
           </div>
         </div>
       </Section>

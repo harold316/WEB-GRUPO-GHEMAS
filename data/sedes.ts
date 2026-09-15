@@ -7,20 +7,20 @@ import type { Sede } from "@/types";
 export const sedes: Sede[] = [
   {
     id: "sede-1",
-    slug: "sede-ejemplo-1",
-    nombre: "Sede 1 (dato de ejemplo)",
-    direccion: "Dirección de la sede (dato de ejemplo)",
-    ciudad: "Ciudad (dato de ejemplo)",
-    diasAtencion: ["Día 1 (ejemplo)", "Día 2 (ejemplo)"],
-    horarios: "Horarios de atención (dato de ejemplo)",
+    slug: "consultorio-ghemas-villa-luzuriaga",
+    nombre: "Consultorio Arrieta",
+    direccion: "Dr. Ignacio Arrieta 1728",
+    ciudad: "Villa Luzuriaga, Buenos Aires",
+    diasAtencion: ["Martes", "Viernes"],
+    horarios: "Turnos martes y viernes. Confirmar horario por WhatsApp.",
     proximasFechas: [
-      "Próxima fecha (dato de ejemplo)",
       "Consultar disponibilidad actualizada",
     ],
     profesionalesIds: ["profesional-1", "profesional-2"],
-    mapaQuery: "Dirección de la sede (dato de ejemplo)",
+    mapaQuery:
+      "Dr. Ignacio Arrieta 1728, Villa Luzuriaga, Buenos Aires, Argentina",
     notas:
-      "Las fechas publicadas son orientativas y de ejemplo. Confirmar turno por WhatsApp.",
+      "Las fechas publicadas son orientativas. Confirmá el turno por WhatsApp.",
   },
   {
     id: "sede-2",
