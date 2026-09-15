@@ -14,6 +14,7 @@ export const profesionales: Profesional[] = [
     especialidad: "Medico Especialista en Hematología",
     MN: "168410",
     celular: "1121812360",
+    email: "danielmedqm27@gmail.com",
     formacion: [
       "Formación académica (dato de ejemplo)",
       "Posgrado / residencia (dato de ejemplo)",
