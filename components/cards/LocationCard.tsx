@@ -2,6 +2,7 @@ import { MapPin, Clock, CalendarDays } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { ContactMap } from "@/components/contact/ContactMap";
+import { SedePhotoGallery } from "@/components/cards/SedePhotoGallery";
 import { getLocationAppointmentMessage } from "@/lib/whatsapp";
 import { getProfesionalesByIds } from "@/data/profesionales";
 import { fullProfessionalName } from "@/lib/utils";
@@ -49,6 +50,9 @@ export function LocationCard({ sede }: { sede: Sede }) {
       </div>
 
       <p className="mt-3 text-xs text-ink-muted">{sede.notas}</p>
+      {sede.fotos?.length ? (
+        <SedePhotoGallery fotos={sede.fotos} nombre={sede.nombre} />
+      ) : null}
       <div className="mt-4 overflow-hidden rounded-xl">
         <ContactMap query={sede.mapaQuery} title={sede.nombre} />
       </div>

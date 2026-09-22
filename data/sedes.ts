@@ -19,6 +19,11 @@ export const sedes: Sede[] = [
     profesionalesIds: ["profesional-1", "profesional-2"],
     mapaQuery:
       "Dr. Ignacio Arrieta 1728, Villa Luzuriaga, Buenos Aires, Argentina",
+    fotos: [
+      "/images/sedes/arrieta-frente.jpg",
+      "/images/sedes/arrieta-sala.jpg",
+      "/images/sedes/arrieta-consultorio.jpg",
+    ],
     notas:
       "Las fechas publicadas son orientativas. Confirmá el turno por WhatsApp.",
   },

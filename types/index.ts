@@ -52,6 +52,7 @@ export type Sede = {
   profesionalesIds: string[];
   mapaQuery: string;
   notas: string;
+  fotos?: string[];
 };
 
 export type Articulo = {

@@ -7,6 +7,7 @@ import { mainNav } from "@/data/navigation";
 import { patologias } from "@/data/patologias";
 import { getAppointmentUrl } from "@/lib/whatsapp";
 import { BrandLogo } from "@/components/layout/BrandLogo";
+import { VisitCounter } from "@/components/layout/VisitCounter";
 
 export function Footer() {
   return (
@@ -103,6 +104,7 @@ export function Footer() {
             © 2026 Ghemas — Consultorio / Grupo de Hematología. Todos los
             derechos reservados.
           </p>
+          <VisitCounter />
           <p className="flex gap-4">
             <Link href="/privacidad" className="hover:text-white">
               Aviso de privacidad

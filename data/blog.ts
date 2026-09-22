@@ -91,21 +91,6 @@ export const articulos: Articulo[] = [
       "El informe debe leerse junto con el profesional que lo pidió. Si te indicaron un frotis y querés coordinar la consulta, podés solicitar turno por WhatsApp.",
     ],
   },
-  {
-    id: "biopsia-medula-que-es",
-    slug: "que-es-una-biopsia-de-medula-osea",
-    titulo: "¿Qué es una biopsia de médula ósea?",
-    fecha: "2026-06-20",
-    categoria: "Procedimientos",
-    resumen:
-      "Una descripción general del procedimiento, para qué se indica y qué no puede responder esta página.",
-    contenido: [
-      "La médula ósea es el tejido donde se producen las células de la sangre. Cuando el estudio de la sangre periférica no alcanza, el equipo médico puede indicar un aspirado, una biopsia o ambos. La biopsia obtiene un pequeño cilindro de hueso y médula para analizar su arquitectura.",
-      "Se realiza en un entorno asistencial, habitualmente con anestesia local, y el sitio más frecuente es la pelvis. El equipo explica el procedimiento, los cuidados y el consentimiento informado. Esta nota no reemplaza esa conversación.",
-      "Los plazos del informe dependen de los estudios que se soliciten sobre la muestra. Los resultados se discuten en la consulta; no se publican en este sitio ni se envían por canales no seguros.",
-      "Si te indicaron el procedimiento y necesitás coordinar una evaluación, el botón de WhatsApp está disponible. Ante una urgencia, acudir a un servicio de emergencias.",
-    ],
-  },
 ];
 
 export function getArticuloBySlug(slug: string) {
