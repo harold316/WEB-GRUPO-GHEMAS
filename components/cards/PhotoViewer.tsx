@@ -11,7 +11,7 @@ function limitar(valor: number, min: number, max: number) {
   return Math.min(max, Math.max(min, valor));
 }
 
-function distancia(a: Touch, b: Touch) {
+function distancia(a: { clientX: number; clientY: number }, b: { clientX: number; clientY: number }) {
   return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
 }
 
