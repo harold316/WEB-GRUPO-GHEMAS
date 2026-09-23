@@ -13,7 +13,8 @@ export const contact = {
   city: "Villa Luzuriaga, Buenos Aires",
   hours: "Martes y viernes. Confirmar horario por WhatsApp.",
   instagramUrl: "https://instagram.com/",
-  facebookUrl: "https://facebook.com/",
+  facebookUrl: "https://www.facebook.com/share/1Kekojk6DH/",
+  tiktokUrl: "https://vm.tiktok.com/ZS9A5N4Eu7thh-i38nl/",
   defaultAppointmentMessage:
     "Hola, quisiera solicitar un turno para Hematología.",
   evaluationMessage:

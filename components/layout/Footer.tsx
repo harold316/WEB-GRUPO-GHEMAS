@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
-import { FacebookIcon, InstagramIcon } from "@/components/ui/SocialIcons";
+import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/ui/SocialIcons";
 import { siteConfig } from "@/config/site";
 import { contact } from "@/config/contact";
 import { mainNav } from "@/data/navigation";
@@ -83,16 +83,27 @@ export function Footer() {
             <a
               href={contact.instagramUrl}
               aria-label="Instagram"
-              className="rounded-full border border-white/20 p-2 hover:bg-white/10"
+              className="rounded-full bg-[linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)] p-2 text-white"
             >
               <InstagramIcon className="h-4 w-4" />
             </a>
             <a
               href={contact.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
-              className="rounded-full border border-white/20 p-2 hover:bg-white/10"
+              className="rounded-full bg-[#1877F2] p-2 text-white"
             >
               <FacebookIcon className="h-4 w-4" />
+            </a>
+            <a
+              href={contact.tiktokUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              className="rounded-full bg-black p-2 text-white ring-1 ring-white/20"
+            >
+              <TikTokIcon className="h-4 w-4" />
             </a>
           </div>
         </div>

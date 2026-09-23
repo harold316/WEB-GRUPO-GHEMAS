@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone, Clock, MessageCircle } from "lucide-react";
-import { FacebookIcon, InstagramIcon } from "@/components/ui/SocialIcons";
+import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/ui/SocialIcons";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { Card } from "@/components/ui/Card";
@@ -72,23 +72,34 @@ export default function ContactoPage() {
             <div className="mt-6 flex gap-3">
               <a
                 href={contact.instagramUrl}
-                className="rounded-full border border-line p-3"
+                className="rounded-full bg-[linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)] p-3 text-white"
                 aria-label="Instagram"
               >
                 <InstagramIcon className="h-4 w-4" />
               </a>
               <a
                 href={contact.facebookUrl}
-                className="rounded-full border border-line p-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-[#1877F2] p-3 text-white"
                 aria-label="Facebook"
               >
                 <FacebookIcon className="h-4 w-4" />
               </a>
               <a
+                href={contact.tiktokUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-black p-3 text-white"
+                aria-label="TikTok"
+              >
+                <TikTokIcon className="h-4 w-4" />
+              </a>
+              <a
                 href={getAppointmentUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-line p-3"
+                className="rounded-full bg-[#25D366] p-3 text-white"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="h-4 w-4" />
