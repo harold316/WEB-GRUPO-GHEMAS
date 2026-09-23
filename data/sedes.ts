@@ -16,7 +16,7 @@ export const sedes: Sede[] = [
     proximasFechas: [
       "Consultar disponibilidad actualizada",
     ],
-    profesionalesIds: ["profesional-1", "profesional-2"],
+    profesionalesIds: ["profesional-1", "profesional-2", "profesional-4"],
     mapaQuery:
       "Dr. Ignacio Arrieta 1728, Villa Luzuriaga, Buenos Aires, Argentina",
     fotos: [
@@ -38,6 +38,7 @@ export const sedes: Sede[] = [
     proximasFechas: ["Consultar disponibilidad actualizada"],
     profesionalesIds: ["profesional-1", "profesional-3"],
     mapaQuery: "-34.669082,-58.613823",
+    fotos: ["/images/sedes/baruch-frente.jpg"],
     notas:
       "La disponibilidad puede modificarse. El canal preferido para turnos es WhatsApp.",
   },

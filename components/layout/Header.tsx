@@ -27,15 +27,15 @@ export function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-line/80 bg-surface/85 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3.5 sm:px-6">
         <Link
           href="/"
-          className="flex min-h-12 items-center gap-2.5 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="flex min-h-14 items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
-          <span className="rounded-md bg-white p-1 shadow-sm ring-1 ring-line">
-            <BrandLogo priority height={42} className="h-10 sm:h-11" />
+          <span className="rounded-lg bg-white p-1.5 shadow-sm ring-1 ring-line">
+            <BrandLogo priority height={72} className="h-14 w-auto sm:h-16 md:h-[4.5rem]" />
           </span>
-          <span className="hidden text-sm font-semibold text-ink min-[400px]:block">
+          <span className="hidden text-base font-semibold text-ink min-[400px]:block">
             Grupo Ghemas
           </span>
         </Link>

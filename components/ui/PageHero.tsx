@@ -1,16 +1,37 @@
+import Image from "next/image";
+
 export function PageHero({
   eyebrow,
   title,
   description,
+  backgroundImage,
+  backgroundAlt,
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
+  backgroundImage?: string;
+  backgroundAlt?: string;
 }) {
   return (
-    <header className="relative overflow-hidden border-b border-line bg-hero px-4 pb-12 pt-28 sm:px-6 sm:pb-16 sm:pt-32">
-      <div className="pointer-events-none absolute -right-16 top-0 h-48 w-48 rounded-full bg-aqua/25 blur-3xl dark:bg-aqua/10" />
-      <div className="mx-auto max-w-6xl">
+    <header className="relative overflow-hidden border-b border-line bg-hero px-4 pb-12 pt-32 sm:px-6 sm:pb-16 sm:pt-36">
+      {backgroundImage ? (
+        <>
+          <Image
+            src={backgroundImage}
+            alt={backgroundAlt ?? ""}
+            fill
+            unoptimized
+            className="object-contain object-right"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[var(--hero-1)] via-[var(--hero-1)]/92 to-[var(--hero-1)]/35" />
+        </>
+      ) : (
+        <div className="pointer-events-none absolute -right-16 top-0 h-48 w-48 rounded-full bg-aqua/25 blur-3xl dark:bg-aqua/10" />
+      )}
+      <div className="relative z-10 mx-auto max-w-6xl">
         {eyebrow ? (
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-brand">
             {eyebrow}

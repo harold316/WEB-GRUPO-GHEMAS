@@ -46,7 +46,19 @@ export default async function EstudioPage({
 
   return (
     <>
-      <PageHero eyebrow="Estudios" title={item.nombre} description={item.resumen} />
+      <PageHero
+        eyebrow="Estudios"
+        title={item.nombre}
+        description={item.resumen}
+        backgroundImage={
+          item.id === "hemostasia" ? "/images/estudios/hemostasia.png" : undefined
+        }
+        backgroundAlt={
+          item.id === "hemostasia"
+            ? "CoaguChek Pro II, equipo de estudios de coagulación"
+            : undefined
+        }
+      />
       <Section>
         <div className="mx-auto max-w-3xl">
           <Block title="¿Qué es?" text={item.queEs} />

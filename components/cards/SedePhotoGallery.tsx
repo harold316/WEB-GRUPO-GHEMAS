@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import { X } from "lucide-react";
+import { PhotoViewer } from "@/components/cards/PhotoViewer";
 
 export function SedePhotoGallery({
   fotos,
@@ -74,20 +75,11 @@ export function SedePhotoGallery({
             >
               <X className="h-5 w-5" />
             </button>
-            <div
-              className="relative h-[min(88vh,900px)] w-[min(92vw,720px)]"
-              onClick={(event) => event.stopPropagation()}
-            >
-              <Image
-                src={fotos[abierta]}
-                alt={`Foto ampliada ${abierta + 1} de ${nombre}`}
-                fill
-                unoptimized
-                className="object-contain"
-                sizes="92vw"
-                priority
-              />
-            </div>
+            <PhotoViewer
+              key={fotos[abierta]}
+              src={fotos[abierta]}
+              alt={`Foto ampliada ${abierta + 1} de ${nombre}`}
+            />
           </div>,
           document.body,
         )
@@ -95,7 +87,9 @@ export function SedePhotoGallery({
 
   return (
     <>
-      <div className="mt-4 grid grid-cols-3 gap-2">
+      <div
+        className={`mt-4 grid gap-2 ${fotos.length === 1 ? "grid-cols-1" : "grid-cols-3"}`}
+      >
         {fotos.map((foto, index) => (
           <button
             key={foto}
@@ -105,7 +99,9 @@ export function SedePhotoGallery({
               event.stopPropagation();
               setAbierta(index);
             }}
-            className="relative aspect-[3/4] overflow-hidden rounded-xl bg-mint focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+            className={`relative overflow-hidden rounded-xl bg-mint focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${
+              fotos.length === 1 ? "aspect-video" : "aspect-[3/4]"
+            }`}
             aria-label={`Ampliar foto ${index + 1} de ${nombre}`}
           >
             <Image
@@ -114,7 +110,7 @@ export function SedePhotoGallery({
               fill
               unoptimized
               className="object-cover"
-              sizes="180px"
+              sizes={fotos.length === 1 ? "600px" : "180px"}
             />
           </button>
         ))}
