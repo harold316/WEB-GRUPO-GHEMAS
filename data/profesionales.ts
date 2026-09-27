@@ -79,7 +79,7 @@ export const profesionales: Profesional[] = [
       "Área de interés 3 (ejemplo)",
     ],
     sedesIds: ["sede-2"],
-    foto: "/images/profesionales/profesional-3.svg",
+    foto: "/images/profesionales/profesional-3.jpg",
     bio: "Médica cirujana del equipo de Grupo Ghemas.",
     esEjemplo: false,
   },
