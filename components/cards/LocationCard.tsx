@@ -38,16 +38,18 @@ export function LocationCard({ sede }: { sede: Sede }) {
         </ul>
       </div>
 
-      <div className="mt-4">
-        <p className="text-xs font-semibold uppercase tracking-wider text-brand">
-          Profesionales
-        </p>
-        <ul className="mt-2 text-sm text-ink-muted">
-          {profesionales.map((item) => (
-            <li key={item.id}>{fullProfessionalName(item)}</li>
-          ))}
-        </ul>
-      </div>
+      {profesionales.length > 0 ? (
+        <div className="mt-4">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand">
+            Profesionales
+          </p>
+          <ul className="mt-2 text-sm text-ink-muted">
+            {profesionales.map((item) => (
+              <li key={item.id}>{fullProfessionalName(item)}</li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
 
       <p className="mt-3 text-xs text-ink-muted">{sede.notas}</p>
       {sede.fotos?.length ? (

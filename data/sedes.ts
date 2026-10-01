@@ -42,6 +42,25 @@ export const sedes: Sede[] = [
     notas:
       "La disponibilidad puede modificarse. El canal preferido para turnos es WhatsApp.",
   },
+  {
+    id: "sede-3",
+    slug: "consultorios-evolutions-moron",
+    nombre: "Consultorios Evolutions",
+    direccion: "Cabildo 255",
+    ciudad: "B1708JPE Morón, Provincia de Buenos Aires, Argentina",
+    diasAtencion: ["A coordinar"],
+    horarios: "Consultar días y horarios por WhatsApp.",
+    proximasFechas: ["Consultar disponibilidad actualizada"],
+    profesionalesIds: [],
+    mapaQuery:
+      "Cabildo 255, B1708JPE Morón, Provincia de Buenos Aires, Argentina",
+    fotos: [
+      "/images/sedes/consultorios-evolutions-recepcion.jpeg",
+      "/images/sedes/consultorios-evolutions-consultorio.jpeg",
+      "/images/sedes/consultorios-evolutions-frente.jpeg",
+    ],
+    notas: "Confirmá disponibilidad y profesionales asignados por WhatsApp.",
+  },
 ];
 
 export function getSedeById(id: string) {

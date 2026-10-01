@@ -15,10 +15,6 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
@@ -53,6 +49,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
+                onClick={() => setOpen(false)}
                 className={classNames(
                   "rounded-full px-2.5 py-2 text-[11px] font-semibold uppercase tracking-wide transition",
                   active
@@ -94,6 +91,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
+                onClick={() => setOpen(false)}
                 className="rounded-xl px-3 py-3 text-sm font-medium text-ink hover:bg-mint"
               >
                 {item.label}

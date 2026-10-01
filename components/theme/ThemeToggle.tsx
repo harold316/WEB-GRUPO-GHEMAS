@@ -13,8 +13,11 @@ export function ThemeToggle() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setTheme(currentTheme());
-    setReady(true);
+    const frame = window.requestAnimationFrame(() => {
+      setTheme(currentTheme());
+      setReady(true);
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   function toggle() {

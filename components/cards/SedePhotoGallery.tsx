@@ -14,20 +14,9 @@ export function SedePhotoGallery({
   nombre: string;
 }) {
   const [abierta, setAbierta] = useState<number | null>(null);
-  const [puedeCerrar, setPuedeCerrar] = useState(false);
-  const [enCliente, setEnCliente] = useState(false);
 
   useEffect(() => {
-    setEnCliente(true);
-  }, []);
-
-  useEffect(() => {
-    if (abierta === null) {
-      setPuedeCerrar(false);
-      return;
-    }
-
-    const listo = window.setTimeout(() => setPuedeCerrar(true), 250);
+    if (abierta === null) return;
 
     function onKey(event: KeyboardEvent) {
       if (event.key === "Escape") setAbierta(null);
@@ -46,19 +35,17 @@ export function SedePhotoGallery({
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
     return () => {
-      window.clearTimeout(listo);
       document.body.style.overflow = "";
       window.removeEventListener("keydown", onKey);
     };
   }, [abierta, fotos.length]);
 
   function cerrar() {
-    if (!puedeCerrar) return;
     setAbierta(null);
   }
 
   const visor =
-    abierta !== null && enCliente
+    abierta !== null
       ? createPortal(
           <div
             className="fixed inset-0 z-[60] flex items-center justify-center bg-ink/80 p-4"

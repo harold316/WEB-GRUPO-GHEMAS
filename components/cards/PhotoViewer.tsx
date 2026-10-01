@@ -20,6 +20,7 @@ export function PhotoViewer({ src, alt }: { src: string; alt: string }) {
   const [escala, setEscala] = useState(1);
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
+  const [arrastrando, setArrastrando] = useState(false);
   const estado = useRef({
     escala: 1,
     x: 0,
@@ -62,6 +63,7 @@ export function PhotoViewer({ src, alt }: { src: string; alt: string }) {
     if (event.pointerType === "touch") return;
     if (estado.current.escala <= MIN) return;
     estado.current.arrastre = true;
+    setArrastrando(true);
     estado.current.lastX = event.clientX;
     estado.current.lastY = event.clientY;
     event.currentTarget.setPointerCapture(event.pointerId);
@@ -80,6 +82,7 @@ export function PhotoViewer({ src, alt }: { src: string; alt: string }) {
 
   function onPointerUp() {
     estado.current.arrastre = false;
+    setArrastrando(false);
   }
 
   function onDoubleClick(event: React.MouseEvent) {
@@ -108,6 +111,7 @@ export function PhotoViewer({ src, alt }: { src: string; alt: string }) {
       }
       estado.current.ultimoToque = ahora;
       estado.current.arrastre = estado.current.escala > MIN;
+      setArrastrando(estado.current.arrastre);
       estado.current.lastX = event.touches[0].clientX;
       estado.current.lastY = event.touches[0].clientY;
     }
@@ -139,7 +143,10 @@ export function PhotoViewer({ src, alt }: { src: string; alt: string }) {
 
   function onTouchEnd(event: React.TouchEvent) {
     if (event.touches.length < 2) estado.current.pellizco = 0;
-    if (event.touches.length === 0) estado.current.arrastre = false;
+    if (event.touches.length === 0) {
+      estado.current.arrastre = false;
+      setArrastrando(false);
+    }
   }
 
   return (
@@ -161,7 +168,7 @@ export function PhotoViewer({ src, alt }: { src: string; alt: string }) {
         className="absolute inset-0"
         style={{
           transform: `translate(${x}px, ${y}px) scale(${escala})`,
-          transition: estado.current.arrastre ? "none" : "transform 160ms ease-out",
+          transition: arrastrando ? "none" : "transform 160ms ease-out",
         }}
       >
         <Image
