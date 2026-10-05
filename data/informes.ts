@@ -18,6 +18,17 @@ export const informes: RecursoArchivo[] = [
     disponible: true,
   },
   {
+    id: "formulario-hct-ci",
+    nombre: "Formulario HCT-CI (hoja rápida)",
+    descripcion:
+      "Hoja de apoyo para completar junto con el equipo tratante.",
+    tipo: "PDF",
+    audiencia: "pacientes",
+    categoria: "Formularios",
+    href: "/downloads/pacientes/HCT-CI_GHEMAS_hoja_rapida.pdf",
+    disponible: true,
+  },
+  {
     id: "solicitud-profesional",
     nombre: "Formulario de solicitud para profesionales (ejemplo)",
     descripcion:
