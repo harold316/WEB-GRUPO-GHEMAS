@@ -58,7 +58,7 @@ export default function InformesPage() {
       <PageHero
         eyebrow="Documentación"
         title="Informes y formularios"
-        description="Archivos de ejemplo para pacientes y colegas. La arquitectura está lista para conectar un almacenamiento real. Los resultados individuales de pacientes no se publican aquí y requerirán autenticación."
+        description="Formularios, indicaciones y material de consulta para pacientes y profesionales. Los resultados individuales de pacientes no se publican aquí y requieren un canal privado."
       />
       <Section>
         <div className="rounded-3xl border border-line bg-mint/50 p-6 sm:p-8">
