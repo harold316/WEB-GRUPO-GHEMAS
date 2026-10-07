@@ -7,25 +7,36 @@ import type { RecursoArchivo } from "@/types";
  */
 export const informes: RecursoArchivo[] = [
   {
-    id: "formulario-paciente",
+    id: "indice-charlson",
+    nombre: "Índice de comorbilidad de Charlson",
+    descripcion:
+      "Cartilla de consulta para apoyar la evaluación clínica de comorbilidades.",
+    tipo: "PDF",
+    audiencia: "profesionales",
+    categoria: "Material de consulta",
+    href: "/downloads/profesionales/indice-charlson-ghemas.pdf",
+    disponible: true,
+  },
+  {
+    id: "formulario-ecog-profesional",
     nombre: "Escala ECOG para consultorio",
     descripcion:
       "Hoja de consultorio para registrar la escala funcional ECOG durante la consulta.",
     tipo: "PDF",
-    audiencia: "pacientes",
-    categoria: "Formularios",
-    href: "/downloads/pacientes/escala-ecog-ghemas-hoja-consultorio.pdf",
+    audiencia: "profesionales",
+    categoria: "Formularios profesionales",
+    href: "/downloads/profesionales/escala-ecog-ghemas-hoja-consultorio.pdf",
     disponible: true,
   },
   {
-    id: "formulario-hct-ci",
+    id: "formulario-hct-ci-profesional",
     nombre: "Formulario HCT-CI (hoja rápida)",
     descripcion:
-      "Hoja de apoyo para completar junto con el equipo tratante.",
+      "Hoja rápida para registrar comorbilidades HCT-CI durante la evaluación clínica.",
     tipo: "PDF",
-    audiencia: "pacientes",
-    categoria: "Formularios",
-    href: "/downloads/pacientes/HCT-CI_GHEMAS_hoja_rapida.pdf",
+    audiencia: "profesionales",
+    categoria: "Formularios profesionales",
+    href: "/downloads/profesionales/HCT-CI_GHEMAS_hoja_rapida.pdf",
     disponible: true,
   },
   {
