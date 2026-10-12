@@ -1,1 +1,5 @@
 [1001/000002.885:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: Acceso denegado. (0x5)
+[1010/171110.699:ERROR:registration_protocol_win.cc(108)] CreateFile: Acceso denegado. (0x5)
+[1010/171628.268:ERROR:registration_protocol_win.cc(108)] CreateFile: Acceso denegado. (0x5)
+[1010/171726.032:ERROR:registration_protocol_win.cc(108)] CreateFile: Acceso denegado. (0x5)
+[1010/172043.652:ERROR:registration_protocol_win.cc(108)] CreateFile: Acceso denegado. (0x5)

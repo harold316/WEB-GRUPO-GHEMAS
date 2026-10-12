@@ -23,25 +23,26 @@ type Common = {
 };
 
 type ButtonAsButton = Common &
-  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "className" | "children"> & {
-    href?: undefined;
-  };
+  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "className" | "children">;
 
 type ButtonAsLink = Common & {
   href: string;
   external?: boolean;
 } & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "className" | "children">;
 
-export function Button(props: ButtonAsButton | ButtonAsLink) {
-  const variant = props.variant ?? "primary";
-  const classes = classNames(
+function getButtonClasses(variant: Variant | undefined, className: string | undefined) {
+  return classNames(
     "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 text-sm font-semibold tracking-wide transition duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2",
-    variants[variant],
-    props.className,
+    variants[variant ?? "primary"],
+    className,
   );
+}
 
-  if (props.href) {
-    const { href, external, className: _c, children, variant: _v, ...rest } = props;
+export function Button(props: ButtonAsButton | ButtonAsLink) {
+  if ("href" in props) {
+    const { href, external, className, children, variant, ...rest } = props;
+    const classes = getButtonClasses(variant, className);
+
     if (external) {
       return (
         <a
@@ -62,8 +63,8 @@ export function Button(props: ButtonAsButton | ButtonAsLink) {
     );
   }
 
-  const { className: _c, children, variant: _v, href: _h, type, ...rest } =
-    props as ButtonAsButton;
+  const { className, children, variant, type, ...rest } = props;
+  const classes = getButtonClasses(variant, className);
   const buttonType: "button" | "submit" | "reset" = type ?? "button";
   return (
     <button type={buttonType} className={classes} {...rest}>

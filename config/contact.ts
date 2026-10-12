@@ -8,7 +8,7 @@ export const contact = {
   whatsappDisplay: "+54 9 11 5403-0229",
   phoneDisplay: "Teléfono (dato de ejemplo)",
   phoneHref: "tel:+5491100000000",
-  email: "email@ejemplo-consultorio.com",
+  email: "consultorio.ghemas@gmail.com",
   address: "Dr. Ignacio Arrieta 1728",
   city: "Villa Luzuriaga, Buenos Aires",
   hours: "Martes y viernes. Confirmar horario por WhatsApp.",

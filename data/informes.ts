@@ -95,6 +95,39 @@ export const informes: RecursoArchivo[] = [
     disponible: true,
   },
   {
+    id: "guia-alimentacion-anticoagulados",
+    nombre: "Guía de alimentación para personas anticoaguladas",
+    descripcion:
+      "Material informativo de GHEMAS sobre alimentación y tratamiento anticoagulante.",
+    tipo: "PDF",
+    audiencia: "profesionales",
+    categoria: "Formularios profesionales",
+    href: "/downloads/profesionales/guia-alimentacion-anticoagulados-ghemas.pdf",
+    disponible: true,
+  },
+  {
+    id: "guia-coagulacion-von-willebrand-hemofilia",
+    nombre: "Guía de coagulación: enfermedad de von Willebrand y hemofilia",
+    descripcion:
+      "Guía de consulta de GHEMAS sobre enfermedad de von Willebrand y hemofilia.",
+    tipo: "PDF",
+    audiencia: "profesionales",
+    categoria: "Formularios profesionales",
+    href: "/downloads/profesionales/guia-coagulacion-von-willebrand-hemofilia-ghemas.pdf",
+    disponible: true,
+  },
+  {
+    id: "guia-visual-lma",
+    nombre: "Guía visual de leucemia mieloide aguda (LMA)",
+    descripcion:
+      "Material visual de GHEMAS para consulta profesional sobre LMA.",
+    tipo: "PDF",
+    audiencia: "profesionales",
+    categoria: "Formularios profesionales",
+    href: "/downloads/profesionales/guia-visual-lma-ghemas.pdf",
+    disponible: true,
+  },
+  {
     id: "material-interes",
     nombre: "Material de interés (próximamente)",
     descripcion:
