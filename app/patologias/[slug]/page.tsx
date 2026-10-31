@@ -8,6 +8,7 @@ import { CtaBanner } from "@/components/cta/CtaBanner";
 import { getPatologiaBySlug, patologiaSlugs } from "@/data/patologias";
 import { pageMetadata } from "@/lib/seo";
 import { getPathologyInquiryMessage } from "@/lib/whatsapp";
+import { PathologyImageViewer } from "@/components/pathologies/PathologyImageViewer";
 
 export function generateStaticParams() {
   return patologiaSlugs.map((slug) => ({ slug }));
@@ -49,16 +50,22 @@ export default async function PatologiaDetallePage({
                 key={flyer}
                 className="relative mb-10 overflow-hidden rounded-3xl border border-line bg-mint shadow-soft"
               >
-                <Image
+                <PathologyImageViewer
                   src={flyer}
-                  alt={`Información de ${item.nombre} — Ghemas`}
-                  width={flyer.endsWith(".jpeg") ? 1079 : item.id === "mieloma-multiple" ? 1079 : 666}
-                  height={flyer.endsWith(".jpeg") ? 760 : item.id === "mieloma-multiple" ? 760 : 1024}
-                  className="h-auto w-full"
-                  priority={flyer === flyers[0]}
-                />
+                  alt={`Ampliar imagen informativa de ${item.nombre}`}
+                >
+                  <Image
+                    src={flyer}
+                    alt={`Información de ${item.nombre}`}
+                    width={item.id === "alteraciones-coagulacion" ? 1116 : item.id === "trombosis-venosa-profunda" ? 860 : item.id === "anemia-ferropenica" ? 853 : item.id === "trombocitopenia" ? 1536 : flyer.endsWith(".jpeg") ? 1079 : item.id === "mieloma-multiple" ? 1079 : 666}
+                    height={item.id === "alteraciones-coagulacion" ? 1280 : item.id === "trombosis-venosa-profunda" ? 1280 : item.id === "anemia-ferropenica" ? 1280 : item.id === "trombocitopenia" ? 1024 : flyer.endsWith(".jpeg") ? 760 : item.id === "mieloma-multiple" ? 760 : 1024}
+                    className="h-auto w-full cursor-zoom-in"
+                    priority={flyer === flyers[0]}
+                  />
+                </PathologyImageViewer>
               </div>
-            ))          ) : (
+            ))
+          ) : (
             <PathologyIcon id={item.id} className="mb-6 h-12 w-12" />
           )}
           <h2 className="font-serif text-2xl text-ink">¿Qué es?</h2>

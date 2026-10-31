@@ -26,6 +26,26 @@ export const patologias: Patologia[] = [
     ],
   },
   {
+    id: "anemia-ferropenica",
+    nombre: "Anemia ferropénica",
+    slug: "anemia-ferropenica",
+    icono: "droplets",
+    flyer: "/images/patologias/anemia-ferropenica.jpeg",
+    resumen: "Anemia asociada a una disponibilidad insuficiente de hierro para producir hemoglobina.",
+    descripcion: "La anemia ferropénica ocurre cuando el organismo no cuenta con hierro suficiente para producir la hemoglobina necesaria. Puede relacionarse con pérdidas de sangre, ingesta insuficiente, problemas de absorción o mayores requerimientos. La evaluación médica busca confirmar la deficiencia y comprender su causa antes de definir el abordaje.",
+    sintomas: [
+      "Cansancio o debilidad persistente",
+      "Palidez, mareos, dolor de cabeza o falta de aire al esfuerzo",
+      "En algunas personas, caída del cabello o uñas frágiles",
+      "Los síntomas pueden variar y no confirman por sí solos una deficiencia de hierro",
+    ],
+    cuandoConsultar: [
+      "Si un análisis muestra anemia o valores de hierro alterados",
+      "Ante cansancio persistente, palidez u otros síntomas que requieren evaluación",
+      "No iniciar suplementos de hierro sin consultar: es necesario confirmar el diagnóstico y su causa",
+    ],
+  },
+  {
     id: "anemias-vcm-alto-bajo",
     nombre: "Anemias con VCM alto y bajo",
     slug: "anemias-vcm-alto-bajo",
@@ -48,7 +68,10 @@ export const patologias: Patologia[] = [
     nombre: "Trombosis",
     slug: "trombosis",
     icono: "activity",
-    flyer: "/images/patologias/trombosis-flyer.jpg",
+    flyers: [
+      "/images/patologias/trombosis-flyer.jpg",
+      "/images/patologias/trombosis-causas.jpeg",
+    ],
     resumen:
       "Formación de un coágulo en un vaso sanguíneo. Requiere evaluación médica oportuna.",
     descripcion:
@@ -67,10 +90,31 @@ export const patologias: Patologia[] = [
     ],
   },
   {
+    id: "trombosis-venosa-profunda",
+    nombre: "Trombosis venosa profunda (TVP)",
+    slug: "trombosis-venosa-profunda",
+    icono: "activity",
+    flyer: "/images/patologias/trombosis-venosa-profunda.jpeg",
+    resumen: "Coágulo en una vena profunda, habitualmente de una pierna. Requiere valoración médica oportuna.",
+    descripcion: "La trombosis venosa profunda (TVP) ocurre cuando se forma un coágulo en una vena profunda, con frecuencia en una pierna. Puede ser grave si el coágulo se desplaza hacia los pulmones. La evaluación y el tratamiento corresponden a un equipo médico y dependen de cada caso.",
+    sintomas: [
+      "Hinchazón reciente en una pierna",
+      "Dolor o sensibilidad, a menudo en la pantorrilla",
+      "Aumento de temperatura, enrojecimiento o cambio de color en la zona",
+      "Puede presentarse sin síntomas evidentes",
+    ],
+    cuandoConsultar: [
+      "Ante hinchazón o dolor repentino en una pierna, buscar valoración médica el mismo día",
+      "Si aparece falta de aire repentina, dolor en el pecho, desmayo o tos con sangre, acudir a emergencias de inmediato",
+      "Si existen antecedentes personales o familiares de trombosis, consultar para una evaluación individual",
+    ],
+  },
+  {
     id: "alteraciones-coagulacion",
     nombre: "Alteraciones de la coagulación",
     slug: "alteraciones-de-la-coagulacion",
     icono: "shield",
+    flyer: "/images/patologias/alteraciones-coagulacion-factores.jpeg",
     resumen:
       "Tendencia a sangrado o a formar coágulos. Se evalúa con historia clínica y estudios dirigidos.",
     descripcion:
@@ -86,6 +130,27 @@ export const patologias: Patologia[] = [
       "Antes de procedimientos, si existe antecedente de sangrado o de trombosis",
       "Cuando otra especialidad solicita evaluación de hemostasia",
       "Si hay dudas sobre medicación anticoagulante o antiagregante (sin suspenderla por cuenta propia)",
+    ],
+  },
+  {
+    id: "hemorragias",
+    nombre: "Hemorragias",
+    slug: "hemorragias",
+    icono: "droplets",
+    flyer: "/images/patologias/hemorragias-causas.jpeg",
+    resumen: "El sangrado puede tener distintas causas y requiere interpretarse en su contexto clínico.",
+    descripcion: "Las hemorragias o la tendencia al sangrado pueden relacionarse con alteraciones congénitas o adquiridas de la coagulación, problemas plaquetarios, enfermedades, déficits nutricionales o algunos medicamentos. La causa no puede determinarse solo por el aspecto del sangrado o por esta información general; requiere evaluación clínica y, cuando corresponde, estudios de laboratorio.",
+    sintomas: [
+      "Sangrado nasal o de encías que se repite o tarda en detenerse",
+      "Moretones frecuentes o grandes sin una causa clara",
+      "Sangrado abundante o prolongado después de una herida o procedimiento",
+      "La intensidad y el contexto ayudan al equipo médico a decidir la evaluación necesaria",
+    ],
+    cuandoConsultar: [
+      "Si hay episodios de sangrado repetidos, moretones frecuentes o antecedentes familiares relevantes",
+      "Si un análisis o profesional sugiere estudiar la coagulación",
+      "Ante sangrado abundante, que no se detiene, debilidad intensa o deterioro rápido, acudir a emergencias",
+      "No suspender ni iniciar medicamentos por cuenta propia; consultar al equipo de salud",
     ],
   },
   {
@@ -112,6 +177,25 @@ export const patologias: Patologia[] = [
     ],
   },
   {
+    id: "trombocitopenia",
+    nombre: "Trombocitopenia",
+    slug: "trombocitopenia",
+    icono: "trendingDown",
+    flyer: "/images/patologias/trombocitopenia-signos.jpeg",
+    resumen: "Disminución del número de plaquetas. Puede tener distintas causas y requiere interpretación médica.",
+    descripcion: "La trombocitopenia es un recuento de plaquetas por debajo del rango de referencia. Puede relacionarse con causas diversas, y su significado depende del valor, de su evolución, de otros resultados del hemograma y del contexto clínico. El diagnóstico y la conducta requieren evaluación profesional.",
+    sintomas: [
+      "A veces se detecta en un análisis sin producir síntomas",
+      "Pueden aparecer petequias, moretones o sangrado de nariz o encías",
+      "La presencia de sangrado no permite identificar por sí sola la causa",
+    ],
+    cuandoConsultar: [
+      "Si un hemograma muestra plaquetas disminuidas, para valorar el resultado y los pasos siguientes",
+      "Si aparecen petequias, moretones inusuales o sangrado, consultar con un profesional",
+      "Ante sangrado abundante o que no se detiene, acudir a emergencias",
+    ],
+  },
+  {
     id: "plaquetas-elevadas",
     nombre: "Plaquetas elevadas",
     slug: "plaquetas-elevadas",
@@ -130,6 +214,25 @@ export const patologias: Patologia[] = [
       "Si un recuento plaquetario se mantiene elevado en controles sucesivos",
       "Cuando el médico de cabecera sugiere evaluación hematológica",
       "Si hay otros valores del hemograma alterados de forma concomitante",
+    ],
+  },
+  {
+    id: "trombocitosis",
+    nombre: "Trombocitosis",
+    slug: "trombocitosis",
+    icono: "trendingUp",
+    flyer: "/images/patologias/plaquetas-elevadas-trombocitosis.jpeg",
+    resumen: "Aumento persistente del recuento de plaquetas. Puede tener distintas causas y requiere evaluación médica.",
+    descripcion: "La trombocitosis es un recuento de plaquetas por encima del rango de referencia. Puede ser reactiva a otras condiciones o, con menor frecuencia, relacionarse con un trastorno hematológico. El resultado debe confirmarse e interpretarse junto con el resto del hemograma, los antecedentes y la evaluación clínica; un valor aislado no establece un diagnóstico.",
+    sintomas: [
+      "A menudo se detecta en un hemograma sin producir síntomas",
+      "Algunas personas presentan molestias inespecíficas, como cefalea u hormigueos",
+      "Los síntomas no confirman por sí solos la causa del recuento elevado",
+    ],
+    cuandoConsultar: [
+      "Si el recuento de plaquetas permanece elevado en análisis repetidos",
+      "Si el médico indica una evaluación hematológica o estudios complementarios",
+      "Ante síntomas intensos o repentinos, buscar atención médica urgente",
     ],
   },
   {

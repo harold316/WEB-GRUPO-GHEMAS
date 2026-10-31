@@ -21,6 +21,12 @@ function Svg({ children }: { children: React.ReactNode }) {
 }
 
 const icons: Record<string, React.ReactNode> = {
+  hemorragias: (
+    <Svg>
+      <path d="M12 3c-2.4 3.3-6 7.1-6 11a6 6 0 0 0 12 0c0-3.9-3.6-7.7-6-11z" />
+      <path d="M9 15a3 3 0 0 0 3 3" />
+    </Svg>
+  ),
   anemia: (
     <Svg>
       <circle cx="12" cy="12" r="8" />
@@ -28,6 +34,16 @@ const icons: Record<string, React.ReactNode> = {
     </Svg>
   ),
   trombosis: (
+    <Svg>
+      <path d="M3 8h18M3 16h18" />
+      <path
+        d="M12 6a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V9a3 3 0 0 1 3-3z"
+        fill="#117C70"
+        fillOpacity="0.2"
+      />
+    </Svg>
+  ),
+  "trombosis-venosa-profunda": (
     <Svg>
       <path d="M3 8h18M3 16h18" />
       <path
