@@ -36,24 +36,29 @@ export default async function PatologiaDetallePage({
   const { slug } = await params;
   const item = getPatologiaBySlug(slug);
   if (!item) notFound();
+  const flyers = item.flyers ?? (item.flyer ? [item.flyer] : []);
 
   return (
     <>
       <PageHero eyebrow="Patologías" title={item.nombre} description={item.resumen} />
       <Section>
         <div className="mx-auto max-w-3xl">
-          {item.flyer ? (
-            <div className="relative mb-10 overflow-hidden rounded-3xl border border-line bg-mint shadow-soft">
-              <Image
-                src={item.flyer}
-                alt={`Información de ${item.nombre} — Ghemas`}
-                width={666}
-                height={1024}
-                className="h-auto w-full"
-                priority
-              />
-            </div>
-          ) : (
+          {flyers.length > 0 ? (
+            flyers.map((flyer) => (
+              <div
+                key={flyer}
+                className="relative mb-10 overflow-hidden rounded-3xl border border-line bg-mint shadow-soft"
+              >
+                <Image
+                  src={flyer}
+                  alt={`Información de ${item.nombre} — Ghemas`}
+                  width={flyer.endsWith(".jpeg") ? 1079 : item.id === "mieloma-multiple" ? 1079 : 666}
+                  height={flyer.endsWith(".jpeg") ? 760 : item.id === "mieloma-multiple" ? 760 : 1024}
+                  className="h-auto w-full"
+                  priority={flyer === flyers[0]}
+                />
+              </div>
+            ))          ) : (
             <PathologyIcon id={item.id} className="mb-6 h-12 w-12" />
           )}
           <h2 className="font-serif text-2xl text-ink">¿Qué es?</h2>

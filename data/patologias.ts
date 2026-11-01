@@ -26,6 +26,24 @@ export const patologias: Patologia[] = [
     ],
   },
   {
+    id: "anemias-vcm-alto-bajo",
+    nombre: "Anemias con VCM alto y bajo",
+    slug: "anemias-vcm-alto-bajo",
+    icono: "droplets",
+    flyer: "/images/patologias/anemia-tipos.jpeg",
+    resumen: "El VCM orienta sobre el tamaño de los glóbulos rojos y ayuda a estudiar distintos tipos de anemia.",
+    descripcion: "El volumen corpuscular medio (VCM) es un valor del hemograma que describe el tamaño promedio de los glóbulos rojos. Un VCM bajo o alto puede orientar la evaluación hacia distintas causas, pero no determina por sí solo el tipo ni el origen de una anemia. La interpretación requiere considerar el resto del hemograma, los antecedentes y los estudios que indique el equipo de salud.",
+    sintomas: [
+      "Puede haber cansancio, palidez o falta de aire, aunque los síntomas varían y no identifican por sí solos la causa",
+      "En ocasiones se detecta por cambios en el hemograma sin síntomas evidentes",
+    ],
+    cuandoConsultar: [
+      "Si el hemograma informa un VCM bajo o alto, para interpretar el resultado en contexto",
+      "Si hay síntomas persistentes o se indicó estudiar la causa de una anemia",
+      "Antes de iniciar suplementos o modificar indicaciones, consultar con un profesional",
+    ],
+  },
+  {
     id: "trombosis",
     nombre: "Trombosis",
     slug: "trombosis",
@@ -115,6 +133,27 @@ export const patologias: Patologia[] = [
     ],
   },
   {
+    id: "mieloma-multiple",
+    nombre: "Mieloma múltiple",
+    slug: "mieloma-multiple",
+    icono: "bone",
+    flyer: "/images/patologias/mieloma-multiple-flyer.jpeg",
+    resumen:
+      "Trastorno de células plasmáticas. Su diagnóstico y seguimiento son estrictamente médicos.",
+    descripcion:
+      "El mieloma múltiple es una enfermedad hematológica que involucra a las células plasmáticas. Puede sospecharse a partir de síntomas, hallazgos de laboratorio o estudios de imágenes, pero el diagnóstico requiere una evaluación especializada y estudios específicos. En este sitio se ofrece información general para orientar la consulta; no se describen criterios diagnósticos ni tratamientos. Cada situación es particular y debe ser abordada por un equipo de salud.",
+    sintomas: [
+      "Cansancio, dolor óseo u otros síntomas generales, que no son exclusivos de esta enfermedad",
+      "Alteraciones en análisis de sangre o de orina indicados por un profesional",
+      "Muchas personas consultan por hallazgos de laboratorio y no por un síntoma único",
+    ],
+    cuandoConsultar: [
+      "Si otra especialidad sugiere evaluación hematológica por proteinograma u otros hallazgos",
+      "Ante síntomas persistentes que el médico considera necesario estudiar",
+      "Para orientación sobre estudios o seguimiento ya indicados",
+    ],
+  },
+  {
     id: "globulos-blancos-elevados",
     nombre: "Glóbulos blancos elevados",
     slug: "globulos-blancos-elevados",
@@ -173,26 +212,6 @@ export const patologias: Patologia[] = [
       "Si el hematocrito o la hemoglobina se encuentran elevados de forma reiterada",
       "Cuando el médico de cabecera solicita evaluación hematológica",
       "Si coexisten otras alteraciones del hemograma",
-    ],
-  },
-  {
-    id: "mieloma-multiple",
-    nombre: "Mieloma múltiple",
-    slug: "mieloma-multiple",
-    icono: "bone",
-    resumen:
-      "Trastorno de células plasmáticas. Su diagnóstico y seguimiento son estrictamente médicos.",
-    descripcion:
-      "El mieloma múltiple es una enfermedad hematológica que involucra a las células plasmáticas. Puede sospecharse a partir de síntomas, hallazgos de laboratorio o estudios de imágenes, pero el diagnóstico requiere una evaluación especializada y estudios específicos. En este sitio se ofrece información general para orientar la consulta; no se describen criterios diagnósticos ni tratamientos. Cada situación es particular y debe ser abordada por un equipo de salud.",
-    sintomas: [
-      "Cansancio, dolor óseo u otros síntomas generales, que no son exclusivos de esta enfermedad",
-      "Alteraciones en análisis de sangre o de orina indicados por un profesional",
-      "Muchas personas consultan por hallazgos de laboratorio y no por un síntoma único",
-    ],
-    cuandoConsultar: [
-      "Si otra especialidad sugiere evaluación hematológica por proteinograma u otros hallazgos",
-      "Ante síntomas persistentes que el médico considera necesario estudiar",
-      "Para orientación sobre estudios o seguimiento ya indicados",
     ],
   },
   {

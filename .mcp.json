@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "blender": {
+      "type": "stdio",
+      "command": "C:\\Users\\HP\\.local\\bin\\uvx.exe",
+      "args": [
+        "--python",
+        "C:\\Program Files\\Blender Foundation\\Blender 5.2\\5.2\\python\\bin\\python.exe",
+        "mcp-for-blender"
+      ],
+      "env": {
+        "UV_CACHE_DIR": "D:\\WEB GRUPO GHEMAS\\.uv-cache",
+        "UV_TOOL_DIR": "D:\\WEB GRUPO GHEMAS\\.uv-tools"
+      }
+    }
+  }
+}

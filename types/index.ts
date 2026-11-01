@@ -22,6 +22,7 @@ export type Patologia = {
   cuandoConsultar: string[];
   icono: IconName;
   flyer?: string;
+  flyers?: string[];
 };
 
 export type { Profesional } from "./profesional";

@@ -45,7 +45,7 @@ export default function HomePage() {
           description="Información educativa sobre motivos frecuentes de consulta. No constituye un diagnóstico."
         />
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {patologias.slice(0, 6).map((item) => (
+          {patologias.slice(0, 7).map((item) => (
             <PathologyCard key={item.id} patologia={item} />
           ))}
         </div>
