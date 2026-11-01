@@ -7,7 +7,9 @@ import type { Patologia } from "@/types";
 
 export function PathologyCard({ patologia }: { patologia: Patologia }) {
   const illustration =
-    patologia.id === "sindrome-antifosfolipidico"
+    patologia.id === "anemia-ferropenica"
+      ? "/images/patologias/anemia-ferropenica-card.png"
+      : patologia.id === "sindrome-antifosfolipidico"
       ? "/images/patologias/sindrome-antifosfolipidico-icon.png"
       : patologia.id === "acumulacion-hierro-exceso"
       ? "/images/patologias/trastornos-hierro.png"
