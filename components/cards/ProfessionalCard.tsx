@@ -32,14 +32,6 @@ export function ProfessionalCard({ profesional }: { profesional: Profesional }) 
         {profesional.MP ? (
           <p className="mt-1 text-sm text-ink-muted">MP {profesional.MP}</p>
         ) : null}
-        {profesional.celular ? (
-          <p className="mt-1 text-sm text-ink-muted">
-            Celular:{" "}
-            <a href={`tel:${profesional.celular.replace(/\D/g, "")}`} className="font-medium text-brand">
-              {profesional.celular}
-            </a>
-          </p>
-        ) : null}
         {profesional.email ? (
           <p className="mt-1 text-sm text-ink-muted">
             Email:{" "}
