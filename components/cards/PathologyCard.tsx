@@ -7,7 +7,13 @@ import type { Patologia } from "@/types";
 
 export function PathologyCard({ patologia }: { patologia: Patologia }) {
   const illustration =
-    patologia.id === "hemorragias"
+    patologia.id === "sindrome-antifosfolipidico"
+      ? "/images/patologias/sindrome-antifosfolipidico-icon.png"
+      : patologia.id === "acumulacion-hierro-exceso"
+      ? "/images/patologias/trastornos-hierro.png"
+      : patologia.id === "anemia-dietas-veganas"
+      ? "/images/patologias/anemia-dietas-veganas-icon.png"
+      : patologia.id === "hemorragias"
       ? "/images/patologias/hemorragias-icon.jpg"
       : patologia.id === "trombosis-venosa-profunda"
       ? "/images/patologias/trombosis-venosa-profunda-card.png"

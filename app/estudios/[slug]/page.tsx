@@ -1,8 +1,10 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { MedicalNotice } from "@/components/ui/MedicalNotice";
 import { CtaBanner } from "@/components/cta/CtaBanner";
+import { PathologyImageViewer } from "@/components/pathologies/PathologyImageViewer";
 import { estudioSlugs, getEstudioBySlug } from "@/data/estudios";
 import { pageMetadata } from "@/lib/seo";
 import { getStudyInquiryMessage } from "@/lib/whatsapp";
@@ -43,6 +45,16 @@ export default async function EstudioPage({
   const { slug } = await params;
   const item = getEstudioBySlug(slug);
   if (!item) notFound();
+  const studyFlyer =
+    item.id === "puncion-medula"
+      ? "/images/estudios/puncion-aspirado-medula-flyer.png"
+      : item.id === "biopsia-medula"
+        ? "/images/estudios/biopsia-medula-flyer.png"
+        : item.id === "frotis"
+          ? "/images/estudios/frotis-sangre-periferica-flyer.png"
+          : item.id === "hemostasia"
+            ? "/images/estudios/hemostasia-coagulacion-flyer.png"
+            : null;
 
   return (
     <>
@@ -61,6 +73,24 @@ export default async function EstudioPage({
       />
       <Section>
         <div className="mx-auto max-w-3xl">
+          {studyFlyer ? (
+            <div className="mb-10 overflow-hidden rounded-3xl border border-line bg-mint shadow-soft">
+              <PathologyImageViewer
+                src={studyFlyer}
+                alt={`Información sobre ${item.nombre.toLowerCase()}`}
+                className="block w-full cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              >
+                <Image
+                  src={studyFlyer}
+                  alt={`Información sobre ${item.nombre.toLowerCase()}`}
+                  width={768}
+                  height={768}
+                  className="h-auto w-full"
+                  priority
+                />
+              </PathologyImageViewer>
+            </div>
+          ) : null}
           <Block title="¿Qué es?" text={item.queEs} />
           <Block title="¿Para qué se solicita?" text={item.paraQue} />
           <Block title="¿Cómo se realiza?" text={item.comoSeRealiza} />

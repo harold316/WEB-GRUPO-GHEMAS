@@ -26,6 +26,28 @@ export const patologias: Patologia[] = [
     ],
   },
   {
+    id: "anemia-dietas-veganas",
+    nombre: "Anemia en dietas veganas",
+    slug: "anemia-dietas-veganas",
+    icono: "droplets",
+    flyer: "/images/patologias/anemia-dietas-veganas-flyer.png",
+    resumen:
+      "Una alimentación vegana requiere planificación para cubrir nutrientes relacionados con la formación de glóbulos rojos.",
+    descripcion:
+      "La anemia puede tener muchas causas y no se diagnostica por seguir una dieta vegana. Una alimentación vegana mal planificada puede no aportar suficiente vitamina B12, hierro u otros nutrientes; ante síntomas o resultados alterados, la evaluación médica y los análisis ayudan a determinar la causa. No iniciar suplementos sin orientación profesional.",
+    sintomas: [
+      "Cansancio o debilidad persistente",
+      "Palidez, mareos o dolor de cabeza",
+      "Falta de aire durante actividades habituales",
+      "Los síntomas pueden tener otras causas y no confirman anemia por sí solos",
+    ],
+    cuandoConsultar: [
+      "Si un análisis muestra hemoglobina baja o valores de hierro o vitamina B12 alterados",
+      "Ante cansancio, palidez u otros síntomas persistentes",
+      "Para recibir orientación sobre alimentación, estudios o suplementos",
+    ],
+  },
+  {
     id: "anemia-ferropenica",
     nombre: "Anemia ferropénica",
     slug: "anemia-ferropenica",
@@ -87,6 +109,29 @@ export const patologias: Patologia[] = [
       "Si se indicó anticoagulación y se necesita control hematológico",
       "Cuando existen dudas sobre estudios de coagulación o antecedentes familiares relevantes",
       "Ante una situación aguda con dolor intenso, falta de aire o síntomas graves: acudir a emergencias",
+    ],
+  },
+  {
+    id: "sindrome-antifosfolipidico",
+    nombre: "Síndrome antifosfolipídico",
+    slug: "sindrome-antifosfolipidico",
+    icono: "activity",
+    flyer: "/images/patologias/sindrome-antifosfolipidico-flyer.jpeg",
+    resumen:
+      "Trastorno autoinmune asociado a mayor riesgo de coágulos y, en algunas personas, complicaciones del embarazo.",
+    descripcion:
+      "El síndrome antifosfolipídico (SAF) es una enfermedad autoinmune en la que ciertos anticuerpos se asocian a trombosis o complicaciones del embarazo. Un resultado positivo aislado no confirma SAF: la interpretación requiere valoración clínica y análisis confirmatorios según indicación profesional. El seguimiento y el tratamiento se individualizan; no iniciar ni suspender anticoagulantes por cuenta propia.",
+    sintomas: [
+      "Puede no causar síntomas hasta que ocurre una trombosis o una complicación obstétrica",
+      "Dolor e hinchazón en una pierna u otros signos de trombosis, que requieren evaluación",
+      "Antecedentes de pérdidas gestacionales recurrentes u otras complicaciones del embarazo",
+      "Los síntomas por sí solos no confirman el diagnóstico",
+    ],
+    cuandoConsultar: [
+      "Si tuviste una trombosis sin causa clara, especialmente a edad joven",
+      "Si presentás pérdidas gestacionales recurrentes o complicaciones obstétricas",
+      "Si los análisis muestran anticuerpos antifosfolípidos y necesitás interpretarlos",
+      "Ante falta de aire repentina, dolor intenso en el pecho o síntomas neurológicos súbitos, acudir a emergencias",
     ],
   },
   {
@@ -223,7 +268,7 @@ export const patologias: Patologia[] = [
     nombre: "Glóbulos blancos elevados",
     slug: "globulos-blancos-elevados",
     icono: "trendingUp",
-    flyer: "/images/patologias/globulos-blancos-elevados-flyer.jpg",
+    flyer: "/images/patologias/globulos-blancos-elevados-flyer.png",
     resumen:
       "Leucocitosis: aumento de glóbulos blancos. Tiene múltiples causas posibles.",
     descripcion:
@@ -244,6 +289,7 @@ export const patologias: Patologia[] = [
     nombre: "Glóbulos blancos disminuidos",
     slug: "globulos-blancos-disminuidos",
     icono: "trendingDown",
+    flyer: "/images/patologias/globulos-blancos-disminuidos-flyer.png",
     resumen:
       "Leucopenia o neutropenia: menor cantidad de glóbulos blancos o de un subtipo.",
     descripcion:
@@ -284,6 +330,7 @@ export const patologias: Patologia[] = [
     nombre: "Leucemias",
     slug: "leucemias",
     icono: "microscope",
+    flyer: "/images/patologias/leucemias-flyer.png",
     resumen:
       "Grupo de enfermedades de la sangre. Requieren diagnóstico especializado; la información aquí es general.",
     descripcion:
@@ -305,6 +352,7 @@ export const patologias: Patologia[] = [
     nombre: "Linfomas",
     slug: "linfomas",
     icono: "layers",
+    flyer: "/images/patologias/linfomas-flyer.png",
     resumen:
       "Tumores del sistema linfático. El diagnóstico es médico y no se realiza por síntomas aislados.",
     descripcion:
@@ -338,6 +386,27 @@ export const patologias: Patologia[] = [
       "Si los estudios de hierro o la ferritina están alterados",
       "Cuando la anemia se asocia a déficit de hierro y se busca su origen",
       "Si existe sospecha de sobrecarga o antecedentes familiares relevantes",
+    ],
+  },
+  {
+    id: "acumulacion-hierro-exceso",
+    nombre: "Acumulación de hierro en exceso",
+    slug: "acumulacion-hierro-exceso",
+    icono: "flaskConical",
+    flyer: "/images/patologias/acumulacion-hierro-exceso-flyer.png",
+    resumen:
+      "La sobrecarga de hierro se evalúa con análisis y antecedentes; una ferritina elevada por sí sola no confirma el diagnóstico.",
+    descripcion:
+      "La acumulación excesiva de hierro puede relacionarse con distintas causas, como algunas condiciones hereditarias, transfusiones repetidas u otras enfermedades. La evaluación considera ferritina, saturación de transferrina, otros análisis y el contexto clínico; la ferritina también puede elevarse por inflamación o enfermedad hepática. El diagnóstico y el tratamiento requieren valoración profesional. No iniciar suplementos ni tratamientos para reducir el hierro por cuenta propia.",
+    sintomas: [
+      "Puede no causar síntomas y detectarse en análisis de laboratorio",
+      "Cansancio o molestias articulares, que también pueden tener muchas otras causas",
+      "Los síntomas por sí solos no confirman una sobrecarga de hierro",
+    ],
+    cuandoConsultar: [
+      "Si los análisis muestran ferritina o saturación de transferrina alteradas",
+      "Si hay antecedentes familiares de sobrecarga de hierro",
+      "Para interpretar resultados y definir si hacen falta estudios adicionales",
     ],
   },
 ];

@@ -33,6 +33,12 @@ const icons: Record<string, React.ReactNode> = {
       <ellipse cx="12" cy="12" rx="4" ry="2.2" />
     </Svg>
   ),
+  "anemia-dietas-veganas": (
+    <Svg>
+      <path d="M19.5 4.5c-7.5 0-13 3.2-13 8.3a5.2 5.2 0 0 0 5.2 5.2c5.1 0 7.8-5.8 7.8-13.5z" />
+      <path d="M5 20c2.3-4.3 5.5-7.2 10.2-10.2" />
+    </Svg>
+  ),
   trombosis: (
     <Svg>
       <path d="M3 8h18M3 16h18" />
@@ -41,6 +47,13 @@ const icons: Record<string, React.ReactNode> = {
         fill="#117C70"
         fillOpacity="0.2"
       />
+    </Svg>
+  ),
+  "sindrome-antifosfolipidico": (
+    <Svg>
+      <path d="M3 8h18M3 16h18" />
+      <path d="M12 5v4M10 7h4" />
+      <circle cx="12" cy="12" r="3" fill="#117C70" fillOpacity="0.2" />
     </Svg>
   ),
   "trombosis-venosa-profunda": (
@@ -114,6 +127,12 @@ const icons: Record<string, React.ReactNode> = {
     </Svg>
   ),
   "trastornos-hierro": (
+    <Svg>
+      <path d="M9 3h6M10 3v5l-3.5 10h11L14 8V3" />
+      <circle cx="12" cy="16" r="1.2" fill="#117C70" fillOpacity="0.35" />
+    </Svg>
+  ),
+  "acumulacion-hierro-exceso": (
     <Svg>
       <path d="M9 3h6M10 3v5l-3.5 10h11L14 8V3" />
       <circle cx="12" cy="16" r="1.2" fill="#117C70" fillOpacity="0.35" />
