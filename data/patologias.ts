@@ -158,7 +158,7 @@ export const patologias: Patologia[] = [
     nombre: "Plaquetas bajas",
     slug: "plaquetas-bajas",
     icono: "trendingDown",
-    flyer: "/images/patologias/plaquetas-bajas-flyer.jpg",
+    flyer: "/images/patologias/plaquetas-bajas-flyer.png",
     resumen:
       "Trombocitopenia: menor cantidad de plaquetas. Requiere contexto clínico para interpretarla.",
     descripcion:
@@ -177,30 +177,11 @@ export const patologias: Patologia[] = [
     ],
   },
   {
-    id: "trombocitopenia",
-    nombre: "Trombocitopenia",
-    slug: "trombocitopenia",
-    icono: "trendingDown",
-    flyer: "/images/patologias/trombocitopenia-signos.jpeg",
-    resumen: "Disminución del número de plaquetas. Puede tener distintas causas y requiere interpretación médica.",
-    descripcion: "La trombocitopenia es un recuento de plaquetas por debajo del rango de referencia. Puede relacionarse con causas diversas, y su significado depende del valor, de su evolución, de otros resultados del hemograma y del contexto clínico. El diagnóstico y la conducta requieren evaluación profesional.",
-    sintomas: [
-      "A veces se detecta en un análisis sin producir síntomas",
-      "Pueden aparecer petequias, moretones o sangrado de nariz o encías",
-      "La presencia de sangrado no permite identificar por sí sola la causa",
-    ],
-    cuandoConsultar: [
-      "Si un hemograma muestra plaquetas disminuidas, para valorar el resultado y los pasos siguientes",
-      "Si aparecen petequias, moretones inusuales o sangrado, consultar con un profesional",
-      "Ante sangrado abundante o que no se detiene, acudir a emergencias",
-    ],
-  },
-  {
     id: "plaquetas-elevadas",
     nombre: "Plaquetas elevadas",
     slug: "plaquetas-elevadas",
     icono: "trendingUp",
-    flyer: "/images/patologias/plaquetas-elevadas-flyer.jpg",
+    flyer: "/images/patologias/plaquetas-elevadas-flyer.png",
     resumen:
       "Trombocitosis: recuento plaquetario por encima del rango de referencia.",
     descripcion:
@@ -214,25 +195,6 @@ export const patologias: Patologia[] = [
       "Si un recuento plaquetario se mantiene elevado en controles sucesivos",
       "Cuando el médico de cabecera sugiere evaluación hematológica",
       "Si hay otros valores del hemograma alterados de forma concomitante",
-    ],
-  },
-  {
-    id: "trombocitosis",
-    nombre: "Trombocitosis",
-    slug: "trombocitosis",
-    icono: "trendingUp",
-    flyer: "/images/patologias/plaquetas-elevadas-trombocitosis.jpeg",
-    resumen: "Aumento persistente del recuento de plaquetas. Puede tener distintas causas y requiere evaluación médica.",
-    descripcion: "La trombocitosis es un recuento de plaquetas por encima del rango de referencia. Puede ser reactiva a otras condiciones o, con menor frecuencia, relacionarse con un trastorno hematológico. El resultado debe confirmarse e interpretarse junto con el resto del hemograma, los antecedentes y la evaluación clínica; un valor aislado no establece un diagnóstico.",
-    sintomas: [
-      "A menudo se detecta en un hemograma sin producir síntomas",
-      "Algunas personas presentan molestias inespecíficas, como cefalea u hormigueos",
-      "Los síntomas no confirman por sí solos la causa del recuento elevado",
-    ],
-    cuandoConsultar: [
-      "Si el recuento de plaquetas permanece elevado en análisis repetidos",
-      "Si el médico indica una evaluación hematológica o estudios complementarios",
-      "Ante síntomas intensos o repentinos, buscar atención médica urgente",
     ],
   },
   {

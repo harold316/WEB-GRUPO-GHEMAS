@@ -29,7 +29,11 @@ export function Header() {
           className="flex min-h-14 items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
           <span className="rounded-lg bg-white p-1.5 shadow-sm ring-1 ring-line">
-            <BrandLogo priority height={72} className="h-14 w-auto sm:h-16 md:h-[4.5rem]" />
+            <BrandLogo
+              priority
+              height={72}
+              className="h-14 w-[91px] sm:h-16 sm:w-[104px] md:h-[4.5rem] md:w-[117px]"
+            />
           </span>
           <span className="hidden text-base font-semibold text-ink min-[400px]:block">
             Grupo Ghemas

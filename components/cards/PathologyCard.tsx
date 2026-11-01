@@ -7,7 +7,9 @@ import type { Patologia } from "@/types";
 
 export function PathologyCard({ patologia }: { patologia: Patologia }) {
   const illustration =
-    patologia.id === "trombosis-venosa-profunda"
+    patologia.id === "hemorragias"
+      ? "/images/patologias/hemorragias-icon.jpg"
+      : patologia.id === "trombosis-venosa-profunda"
       ? "/images/patologias/trombosis-venosa-profunda-card.png"
       : `/images/patologias/${patologia.id}.png`;
   const illustrationAlt = `Ilustracion educativa de ${patologia.nombre}`;

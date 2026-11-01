@@ -57,8 +57,8 @@ export default async function PatologiaDetallePage({
                   <Image
                     src={flyer}
                     alt={`Información de ${item.nombre}`}
-                    width={item.id === "alteraciones-coagulacion" ? 1116 : item.id === "trombosis-venosa-profunda" ? 860 : item.id === "anemia-ferropenica" ? 853 : item.id === "trombocitopenia" ? 1536 : flyer.endsWith(".jpeg") ? 1079 : item.id === "mieloma-multiple" ? 1079 : 666}
-                    height={item.id === "alteraciones-coagulacion" ? 1280 : item.id === "trombosis-venosa-profunda" ? 1280 : item.id === "anemia-ferropenica" ? 1280 : item.id === "trombocitopenia" ? 1024 : flyer.endsWith(".jpeg") ? 760 : item.id === "mieloma-multiple" ? 760 : 1024}
+                    width={flyer.endsWith("plaquetas-elevadas-flyer.png") ? 1093 : item.id === "alteraciones-coagulacion" ? 1116 : item.id === "trombosis-venosa-profunda" ? 860 : item.id === "anemia-ferropenica" ? 853 : flyer.endsWith(".jpeg") ? 1079 : item.id === "mieloma-multiple" ? 1079 : 666}
+                    height={flyer.endsWith("plaquetas-elevadas-flyer.png") ? 768 : item.id === "alteraciones-coagulacion" || item.id === "trombosis-venosa-profunda" || item.id === "anemia-ferropenica" ? 1280 : flyer.endsWith(".jpeg") ? 760 : item.id === "mieloma-multiple" ? 760 : 1024}
                     className="h-auto w-full cursor-zoom-in"
                     priority={flyer === flyers[0]}
                   />
