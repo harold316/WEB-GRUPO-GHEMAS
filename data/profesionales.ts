@@ -13,7 +13,6 @@ export const profesionales: Profesional[] = [
     apellido: "Quispe Mamani",
     especialidad: "Medico Especialista en Hematología",
     MN: "168410",
-    celular: "1121812360",
     email: "danielmedqm27@gmail.com",
     formacion: [
       "Médico: Universidad Técnica de Oruro, Bolivia.)",
@@ -21,7 +20,7 @@ export const profesionales: Profesional[] = [
     ],
     experiencia:
       "Experiencia profesional (dato de ejemplo). Completar con trayectoria real del equipo.",
-      
+
     areasInteres: [
       "Área de interés 1 (ejemplo)",
       "Área de interés 2 (ejemplo)",
@@ -41,7 +40,6 @@ export const profesionales: Profesional[] = [
     especialidad: "Medica Especialista en Diagnóstico por Imágenes",
     MN: "181260",
     MP: "459108",
-    celular: "1156168585",
     email: "palmemorales97@gmail.com",
     formacion: [
       "Formación académica (dato de ejemplo)",
@@ -66,7 +64,6 @@ export const profesionales: Profesional[] = [
     apellido: "Perez Magne",
     especialidad: "Medica",
     MN: "147877",
-    celular: "1151644478",
     email: "Jheanneth10@gmail.com",
     formacion: [
       "Formación académica (dato de ejemplo)",
