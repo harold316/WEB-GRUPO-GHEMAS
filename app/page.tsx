@@ -25,6 +25,13 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <Section>
+        <SectionHeading
+          eyebrow="Hematología clínica"
+          title="Nuestra misión"
+          description="En Grupo GHEMAS trabajamos para facilitar el acceso a una atención hematológica especializada, brindando diagnósticos oportunos, tratamientos de calidad y seguimiento personalizado. Nuestro compromiso es acercar la Hematología a quienes la necesitan, eliminando barreras y acompañando a cada paciente con calidez, confianza y compromiso profesional."
+        />
+      </Section>
       <Section className="bg-[#eef7f4] dark:bg-surface-muted">
         <SectionHeading
           eyebrow="El consultorio"
