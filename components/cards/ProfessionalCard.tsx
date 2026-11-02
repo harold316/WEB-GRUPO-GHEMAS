@@ -9,7 +9,7 @@ export function ProfessionalCard({ profesional }: { profesional: Profesional }) 
 
   return (
     <Card className="flex h-full flex-col overflow-hidden p-0">
-      <div className="relative aspect-[4/3] bg-mint">
+      <div className="relative aspect-4/3 bg-mint">
         <Image
           src={profesional.foto}
           alt={`Fotografía de ${name}`}

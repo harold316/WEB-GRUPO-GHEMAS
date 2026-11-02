@@ -19,12 +19,13 @@ export const profesionales: Profesional[] = [
       "Posgrado: Formación en Hematología: Hospital General de Agudos Dr. José María Ramos Mejía, Buenos Aires, Argentina.",
     ],
     experiencia:
-      "Experiencia profesional (dato de ejemplo). Completar con trayectoria real del equipo.",
-
+      "Experiencia en atención hematológica ambulatoria y hospitalaria, incluyendo consultorios externos, internación y hospital de día. También cuento con experiencia en el diagnóstico, tratamiento y seguimiento de pacientes con enfermedades hematológicas clínicas y oncohematológicas.",
     areasInteres: [
-      "Área de interés 1 (ejemplo)",
-      "Área de interés 2 (ejemplo)",
-      "Área de interés 3 (ejemplo)",
+      "Hematología clínica y oncohematología.",
+      "Anemias y alteraciones del hemograma.",
+      "Leucemias, linfomas y mieloma múltiple.",
+      "Trastornos de coagulación, trombosis y anticoagulación.",
+      "Alteraciones plaquetarias y enfermedades mieloproliferativas.",
     ],
     sedesIds: ["sede-1", "sede-2"],
     foto: "/images/profesionales/profesional-1.jpg",
@@ -42,14 +43,19 @@ export const profesionales: Profesional[] = [
     MP: "459108",
     email: "palmemorales97@gmail.com",
     formacion: [
-      "Formación académica (dato de ejemplo)",
-      "Posgrado / residencia (dato de ejemplo)",
+      "Especialista en Diagnóstico por Imágenes: título otorgado por la Universidad de Buenos Aires (UBA).",
+      "Formación hospitalaria: Hospital Interzonal General de Agudos Eva Perón (ex Hospital Castex), San Martín, Buenos Aires.",
     ],
     experiencia:
-      "Experiencia profesional (dato de ejemplo). Completar con trayectoria real del equipo.",
+      "Experiencia en diagnóstico por imágenes en el ámbito hospitalario y ambulatorio, incluyendo la evaluación e interpretación de estudios por imágenes. Orientación al diagnóstico oportuno de diferentes patologías mediante estudios complementarios, contribuyendo a la evaluación clínica y al seguimiento de los pacientes.",
     areasInteres: [
-      "Área de interés 1 (ejemplo)",
-      "Área de interés 2 (ejemplo)",
+      "Diagnóstico por imágenes y radiología general.",
+      "Ecografía general y especializada.",
+      "Ecografía Doppler (Ecodoppler).",
+      "Tomografía computada.",
+      "Resonancia magnética.",
+      "Diagnóstico por imágenes de patologías clínicas.",
+      "Evaluación y seguimiento de enfermedades mediante estudios por imágenes.",
     ],
     sedesIds: ["sede-1"],
     foto: "/images/profesionales/profesional-2.jpg",

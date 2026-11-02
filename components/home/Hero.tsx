@@ -49,7 +49,7 @@ export function Hero() {
           </dl>
         </div>
         <div className="animate-fade-up relative delay-150">
-          <div className="relative aspect-[5/4] min-h-[280px] overflow-hidden rounded-[2rem] border border-line bg-surface shadow-soft ring-1 ring-brand/10 sm:min-h-[360px]">
+          <div className="relative aspect-5/4 min-h-70 overflow-hidden rounded-4xl border border-line bg-surface shadow-soft ring-1 ring-brand/10 sm:min-h-90">
             <Image
               src="/images/hero-consulta-hematologica.jpg"
               alt="Consulta hematológica: médico especialista atendiendo a una paciente en consultorio"
