@@ -67,14 +67,14 @@ export function PathologyImageViewer({
       {isOpen
         ? createPortal(
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 sm:p-8"
+          className="fixed inset-0 z-100 flex items-center justify-center bg-black/90 p-4 sm:p-8"
           onClick={(event) => {
             if (event.target === event.currentTarget) setIsOpen(false);
           }}
         >
           <button
             type="button"
-            className="absolute right-4 top-4 z-[110] flex h-14 w-14 items-center justify-center rounded-full border-2 border-slate-900 bg-white text-slate-950 shadow-2xl transition hover:scale-105 hover:bg-slate-100 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="absolute right-4 top-4 z-110 flex h-14 w-14 items-center justify-center rounded-full border-2 border-slate-900 bg-white text-slate-950 shadow-2xl transition hover:scale-105 hover:bg-slate-100 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white"
             aria-label="Cerrar imagen ampliada"
             onClick={() => setIsOpen(false)}
           >

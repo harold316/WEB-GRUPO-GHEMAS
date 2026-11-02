@@ -422,22 +422,31 @@ export const areasPatologias: AreaPatologia[] = [
   {
     titulo: "Área 1. Anemias",
     enfermedades: [
+      { nombre: "Anemia", slug: "anemia" },
+      { nombre: "Anemia en dietas veganas", slug: "anemia-dietas-veganas" },
       { nombre: "Anemias microcíticas", slug: "anemias-vcm-alto-bajo" },
       { nombre: "Anemias macrocíticas", slug: "anemias-vcm-alto-bajo" },
       { nombre: "Anemia ferropénica", slug: "anemia-ferropenica" },
       { nombre: "Anemias hemolíticas" },
       { nombre: "Anemias por déficit de vitamina B12 y ácido fólico" },
     ],
-    patologiaIds: ["anemias-vcm-alto-bajo", "anemia-ferropenica"],
+    patologiaIds: [
+      "anemia",
+      "anemia-dietas-veganas",
+      "anemias-vcm-alto-bajo",
+      "anemia-ferropenica",
+    ],
   },
   {
     titulo: "Área 2. Enfermedades trombóticas o trombosis",
     enfermedades: [
+      { nombre: "Trombosis", slug: "trombosis" },
       { nombre: "Trombosis venosa profunda", slug: "trombosis-venosa-profunda" },
       { nombre: "Síndrome antifosfolipídico", slug: "sindrome-antifosfolipidico" },
       { nombre: "Trombocitosis (aumento de plaquetas)", slug: "plaquetas-elevadas" },
     ],
     patologiaIds: [
+      "trombosis",
       "trombosis-venosa-profunda",
       "sindrome-antifosfolipidico",
       "plaquetas-elevadas",
@@ -458,9 +467,10 @@ export const areasPatologias: AreaPatologia[] = [
     enfermedades: [
       { nombre: "Leucemia linfocítica crónica (LLC)", slug: "leucemias" },
       { nombre: "Leucemia mieloide crónica (LMC)", slug: "leucemias" },
+      { nombre: "Linfomas", slug: "linfomas" },
       { nombre: "Mieloma múltiple", slug: "mieloma-multiple" },
     ],
-    patologiaIds: ["leucemias", "mieloma-multiple"],
+    patologiaIds: ["leucemias", "linfomas", "mieloma-multiple"],
   },
 ];
 
