@@ -7,6 +7,17 @@ import type { RecursoArchivo } from "@/types";
  */
 export const informes: RecursoArchivo[] = [
   {
+    id: "guia-alimentacion-anemia-ferropenica",
+    nombre: "Guía de alimentación para personas con anemia ferropénica",
+    descripcion:
+      "Material informativo de GHEMAS sobre alimentación y anemia ferropénica.",
+    tipo: "PDF",
+    audiencia: "pacientes",
+    categoria: "Guías para pacientes",
+    href: "/downloads/pacientes/Guia_alimentacion_anemia_ferropenica_GHEMAS.pdf",
+    disponible: true,
+  },
+  {
     id: "indice-charlson",
     nombre: "Índice de comorbilidad de Charlson",
     descripcion:

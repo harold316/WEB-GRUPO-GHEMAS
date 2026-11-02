@@ -9,7 +9,11 @@ export function ProfessionalCard({ profesional }: { profesional: Profesional }) 
 
   return (
     <Card className="flex h-full flex-col overflow-hidden p-0">
-      <div className="relative aspect-4/3 bg-mint">
+      <Link
+        href={`/profesionales/${profesional.slug}`}
+        aria-label={`Ver perfil de ${name}`}
+        className="relative block aspect-4/3 bg-mint focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+      >
         <Image
           src={profesional.foto}
           alt={`Fotografía de ${name}`}
@@ -17,7 +21,7 @@ export function ProfessionalCard({ profesional }: { profesional: Profesional }) 
           unoptimized
           className="object-cover object-top"
         />
-      </div>
+      </Link>
       <div className="flex flex-1 flex-col p-6">
         {profesional.esEjemplo ? (
           <p className="text-xs font-semibold uppercase tracking-wider text-brand">

@@ -10,6 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 import { fullProfessionalName } from "@/lib/utils";
 import { getProfessionalAppointmentMessage } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
+import { PathologyImageViewer } from "@/components/pathologies/PathologyImageViewer";
 
 export function generateStaticParams() {
   return profesionalSlugs.map((slug) => ({ slug }));
@@ -49,7 +50,11 @@ export default async function ProfesionalPage({
       <Section>
         <div className="grid gap-10 lg:grid-cols-[280px_1fr]">
           <div>
-            <div className="relative aspect-3/4 overflow-hidden rounded-2xl bg-mint">
+            <PathologyImageViewer
+              src={item.foto}
+              alt={`Fotografía de ${name}`}
+              className="relative block aspect-3/4 w-full cursor-zoom-in overflow-hidden rounded-2xl bg-mint focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+            >
               <Image
                 src={item.foto}
                 alt={`Fotografía de ${name}`}
@@ -57,7 +62,7 @@ export default async function ProfesionalPage({
                 unoptimized
                 className="object-cover object-top"
               />
-            </div>
+            </PathologyImageViewer>
             {item.esEjemplo ? (
               <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-brand">
                 Dato de ejemplo — reemplazar
