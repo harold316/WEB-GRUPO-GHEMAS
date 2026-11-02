@@ -411,6 +411,59 @@ export const patologias: Patologia[] = [
   },
 ];
 
+type EnfermedadArea = { nombre: string; slug?: string };
+type AreaPatologia = {
+  titulo: string;
+  enfermedades: EnfermedadArea[];
+  patologiaIds: string[];
+};
+
+export const areasPatologias: AreaPatologia[] = [
+  {
+    titulo: "Área 1. Anemias",
+    enfermedades: [
+      { nombre: "Anemias microcíticas", slug: "anemias-vcm-alto-bajo" },
+      { nombre: "Anemias macrocíticas", slug: "anemias-vcm-alto-bajo" },
+      { nombre: "Anemia ferropénica", slug: "anemia-ferropenica" },
+      { nombre: "Anemias hemolíticas" },
+      { nombre: "Anemias por déficit de vitamina B12 y ácido fólico" },
+    ],
+    patologiaIds: ["anemias-vcm-alto-bajo", "anemia-ferropenica"],
+  },
+  {
+    titulo: "Área 2. Enfermedades trombóticas o trombosis",
+    enfermedades: [
+      { nombre: "Trombosis venosa profunda", slug: "trombosis-venosa-profunda" },
+      { nombre: "Síndrome antifosfolipídico", slug: "sindrome-antifosfolipidico" },
+      { nombre: "Trombocitosis (aumento de plaquetas)", slug: "plaquetas-elevadas" },
+    ],
+    patologiaIds: [
+      "trombosis-venosa-profunda",
+      "sindrome-antifosfolipidico",
+      "plaquetas-elevadas",
+    ],
+  },
+  {
+    titulo: "Área 3. Hemorragias",
+    enfermedades: [
+      { nombre: "Trastornos de la coagulación", slug: "alteraciones-de-la-coagulacion" },
+      { nombre: "Plaquetas bajas (trombocitopenia)", slug: "plaquetas-bajas" },
+      { nombre: "Púrpura trombocitopénica inmune (PTI)" },
+      { nombre: "Púrpuras y manifestaciones hemorrágicas", slug: "hemorragias" },
+    ],
+    patologiaIds: ["alteraciones-coagulacion", "plaquetas-bajas", "hemorragias"],
+  },
+  {
+    titulo: "Área 4. Enfermedades oncohematológicas",
+    enfermedades: [
+      { nombre: "Leucemia linfocítica crónica (LLC)", slug: "leucemias" },
+      { nombre: "Leucemia mieloide crónica (LMC)", slug: "leucemias" },
+      { nombre: "Mieloma múltiple", slug: "mieloma-multiple" },
+    ],
+    patologiaIds: ["leucemias", "mieloma-multiple"],
+  },
+];
+
 export function getPatologiaBySlug(slug: string) {
   return patologias.find((item) => item.slug === slug);
 }

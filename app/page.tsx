@@ -1,13 +1,12 @@
 import { Hero, AttentionCards } from "@/components/home/Hero";
 import { Section, SectionHeading } from "@/components/ui/Section";
-import { PathologyCard } from "@/components/cards/PathologyCard";
+import { PathologyAreas } from "@/components/pathologies/PathologyAreas";
 import { ProfessionalCard } from "@/components/cards/ProfessionalCard";
 import { StudyCard } from "@/components/cards/StudyCard";
 import { LocationCard } from "@/components/cards/LocationCard";
 import { CtaBanner } from "@/components/cta/CtaBanner";
 import { Button } from "@/components/ui/Button";
 import { MedicalNotice } from "@/components/ui/MedicalNotice";
-import { patologias } from "@/data/patologias";
 import { profesionales } from "@/data/profesionales";
 import { estudios } from "@/data/estudios";
 import { sedes } from "@/data/sedes";
@@ -51,10 +50,8 @@ export default function HomePage() {
           title="¿Qué patologías atendemos?"
           description="Información educativa sobre motivos frecuentes de consulta. No constituye un diagnóstico."
         />
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {patologias.slice(0, 12).map((item) => (
-            <PathologyCard key={item.id} patologia={item} />
-          ))}
+        <div className="mt-10">
+          <PathologyAreas />
         </div>
         <div className="mt-8">
           <Button href="/patologias" variant="secondary">
