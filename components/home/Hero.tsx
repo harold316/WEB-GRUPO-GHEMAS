@@ -16,11 +16,10 @@ export function Hero() {
             Hematología especializada, cerca de vos
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
-            En Grupo GHEMAS ofrecemos un espacio de confianza para conversar sobre
-            tu enfermedad, evaluar tus estudios, resolver tus dudas y brindarte
-            una orientación médica clara y personalizada, acompañándote en cada
-            etapa de tu atención y seguimiento con cercanía, calidez humana y
-            compromiso profesional.
+            Nuestra prioridad es{" "}
+            <strong>brindarle tranquilidad</strong> a través de diagnósticos
+            claros y tratamientos personalizados, siempre en un ambiente cálido,
+            seguro y de absoluta confianza.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <WhatsAppButton label="Solicitar turno por WhatsApp" />

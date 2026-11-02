@@ -17,7 +17,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Hematología especializada",
   description:
-    "En Grupo GHEMAS ofrecemos un espacio de confianza para conversar sobre tu enfermedad, evaluar tus estudios, resolver tus dudas y brindarte una orientación médica clara y personalizada, acompañándote en cada etapa de tu atención y seguimiento con cercanía, calidez humana y compromiso profesional.",
+    "Hematología especializada: diagnóstico, estudios y seguimiento. Solicitá turno por WhatsApp.",
   path: "/",
 });
 
