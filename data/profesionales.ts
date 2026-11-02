@@ -16,11 +16,12 @@ export const profesionales: Profesional[] = [
     celular: "1121812360",
     email: "danielmedqm27@gmail.com",
     formacion: [
-      "Formación académica (dato de ejemplo)",
-      "Posgrado / residencia (dato de ejemplo)",
+      "Médico: Universidad Técnica de Oruro, Bolivia.)",
+      "Posgrado: Formación en Hematología: Hospital General de Agudos Dr. José María Ramos Mejía, Buenos Aires, Argentina.",
     ],
     experiencia:
       "Experiencia profesional (dato de ejemplo). Completar con trayectoria real del equipo.",
+      
     areasInteres: [
       "Área de interés 1 (ejemplo)",
       "Área de interés 2 (ejemplo)",

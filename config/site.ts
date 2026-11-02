@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "Ghemas",
   tagline: "Hematología especializada, cerca de vos",
   description:
-    "Atención especializada para el diagnóstico, estudio y seguimiento de enfermedades de la sangre y del sistema hematológico.",
+    "En Grupo GHEMAS ofrecemos un espacio de confianza para conversar sobre tu enfermedad, evaluar tus estudios, resolver tus dudas y brindarte una orientación médica clara y personalizada, acompañándote en cada etapa de tu atención y seguimiento con cercanía, calidez humana y compromiso profesional.",
   locale: "es_AR",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 } as const;

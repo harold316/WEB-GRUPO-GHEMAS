@@ -16,8 +16,11 @@ export function Hero() {
             Hematología especializada, cerca de vos
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
-            Atención especializada para el diagnóstico, estudio y seguimiento de
-            enfermedades de la sangre y del sistema hematológico.
+            En Grupo GHEMAS ofrecemos un espacio de confianza para conversar sobre
+            tu enfermedad, evaluar tus estudios, resolver tus dudas y brindarte
+            una orientación médica clara y personalizada, acompañándote en cada
+            etapa de tu atención y seguimiento con cercanía, calidez humana y
+            compromiso profesional.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <WhatsAppButton label="Solicitar turno por WhatsApp" />

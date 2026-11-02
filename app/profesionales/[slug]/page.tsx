@@ -49,7 +49,7 @@ export default async function ProfesionalPage({
       <Section>
         <div className="grid gap-10 lg:grid-cols-[280px_1fr]">
           <div>
-            <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-mint">
+            <div className="relative aspect-3/4 overflow-hidden rounded-2xl bg-mint">
               <Image
                 src={item.foto}
                 alt={`Fotografía de ${name}`}
