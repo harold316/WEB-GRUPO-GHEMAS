@@ -32,14 +32,7 @@ export default function HomePage() {
         />
       </Section>
       <Section className="bg-[#eef7f4] dark:bg-surface-muted">
-        <SectionHeading
-          eyebrow="El consultorio"
-          title="Atención especializada"
-          description="Un espacio pensado para explicar con calma, ordenar estudios y acompañar el seguimiento hematológico."
-        />
-        <div className="mt-10">
-          <AttentionCards />
-        </div>
+        <AttentionCards />
       </Section>
 
       <Section className="relative overflow-hidden bg-[#eef7f4] dark:bg-surface-muted">

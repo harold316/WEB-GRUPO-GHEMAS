@@ -15,10 +15,6 @@ export function Hero() {
           <h1 className="mt-5 font-serif text-4xl leading-tight text-ink sm:text-5xl lg:text-[3.35rem]">
             Hematología especializada, cerca de vos
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
-            Atención especializada para el diagnóstico, estudio y seguimiento de
-            enfermedades de la sangre y del sistema hematológico.
-          </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <WhatsAppButton label="Solicitar turno por WhatsApp" />
             <Button href="/profesionales" variant="secondary">
