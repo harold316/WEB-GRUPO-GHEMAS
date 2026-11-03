@@ -15,9 +15,6 @@ export function Hero() {
           <h1 className="mt-5 font-serif text-4xl leading-tight text-ink sm:text-5xl lg:text-[3.35rem]">
             Hematología especializada, cerca de vos
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-muted">
-            En Grupo GHEMAS ofrecemos un espacio de confianza para conversar sobre tu enfermedad, evaluar tus estudios, resolver tus dudas y brindarte una orientación médica clara y personalizada, acompañándote en cada etapa de tu atención y seguimiento con cercanía, calidez humana y compromiso profesional.
-          </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <WhatsAppButton label="Solicitar turno por WhatsApp" />
             <Button href="/profesionales" variant="secondary">

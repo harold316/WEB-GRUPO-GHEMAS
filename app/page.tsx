@@ -30,6 +30,13 @@ export default function HomePage() {
           title="Nuestra misión"
           description="En Grupo GHEMAS trabajamos para facilitar el acceso a una atención hematológica especializada, brindando diagnósticos oportunos, tratamientos de calidad y seguimiento personalizado. Nuestro compromiso es acercar la Hematología a quienes la necesitan, eliminando barreras y acompañando a cada paciente con calidez, confianza y compromiso profesional."
         />
+        <div className="mt-10 border-t border-line pt-8">
+          <SectionHeading
+            eyebrow="Grupo GHEMAS"
+            title="Atención especializada"
+            description="En Grupo GHEMAS ofrecemos un espacio de confianza para conversar sobre tu enfermedad, evaluar tus estudios, resolver tus dudas y brindarte una orientación médica clara y personalizada, acompañándote en cada etapa de tu atención y seguimiento con cercanía, calidez humana y compromiso profesional."
+          />
+        </div>
       </Section>
       <Section className="bg-[#eef7f4] dark:bg-surface-muted">
         <AttentionCards />
